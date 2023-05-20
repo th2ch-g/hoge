@@ -21,7 +21,7 @@ const Navbar = () => {
                 />{' '}
                 <NavbarItem
                     label="blog"
-                    href="/blog"
+                    href="/home/blog"
                 />{' '}
             </Flex>
         </Flex>
