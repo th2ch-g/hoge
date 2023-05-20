@@ -2,6 +2,7 @@ import { Flex, Square, Center, Text, Box } from '@chakra-ui/react';
 import { NavbarItem } from '#/components/molecules/NavbarItem';
 
 const Footer = () => {
+    const path = process.env.NODE_ENV === 'production' ? '/home/' : '/';
     return (
         <Flex
             px={30}
@@ -15,27 +16,27 @@ const Footer = () => {
                 <Flex gap={{ base: 30, sm: 100 }}>
                     <NavbarItem
                         label="home"
-                        href="/home/home"
+                        href={path + "home"}
                     />{' '}
                     <NavbarItem
                         label="blog"
-                        href="/home/blog"
+                        href={path + "blog"}
                     />{' '}
                     <NavbarItem
                         label="works"
-                        href="/home/works"
+                        href={path + "works"}
                     />{' '}
                     <NavbarItem
                         label="research"
-                        href="/home/research"
+                        href={path + "research"}
                     />{' '}
                     <NavbarItem
                         label="photo"
-                        href="/home/photo"
+                        href={path + "photo"}
                     />{' '}
                     <NavbarItem
                         label="memo"
-                        href="/home/memo"
+                        href={path + "memo"}
                     />{' '}
                 </Flex>
                 <Text fontSize={15}> ©2023 - th2ch-g </Text>
