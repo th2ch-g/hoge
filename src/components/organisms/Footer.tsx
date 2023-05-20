@@ -15,27 +15,27 @@ const Footer = () => {
                 <Flex gap={{ base: 30, sm: 100 }}>
                     <NavbarItem
                         label="home"
-                        href="/home/home"
+                        href="home"
                     />{' '}
                     <NavbarItem
                         label="blog"
-                        href="/home/blog"
+                        href="blog"
                     />{' '}
                     <NavbarItem
                         label="works"
-                        href="/home/works"
+                        href="works"
                     />{' '}
                     <NavbarItem
                         label="research"
-                        href="/home/research"
+                        href="research"
                     />{' '}
                     <NavbarItem
                         label="photo"
-                        href="/home/photo"
+                        href="photo"
                     />{' '}
                     <NavbarItem
                         label="memo"
-                        href="/home/memo"
+                        href="memo"
                     />{' '}
                 </Flex>
                 <Text fontSize={15}> ©2023 - th2ch-g </Text>
