@@ -88,7 +88,12 @@ const components: MDXComponents = {
         return <Box {...props} />;
     },
     code(props: CodeProps) {
-        return <Code {...props} w="full" />;
+        return (
+            <Code
+                {...props}
+                w="full"
+            />
+        );
     },
 };
 

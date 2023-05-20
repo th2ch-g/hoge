@@ -12,7 +12,10 @@ export default function App({ Component, pageProps }: AppProps) {
                 <Stack minH="100vh">
                     <Navbar />
                     <Box flexGrow={1}>
-                        <Container maxW="container.md">
+                        <Container
+                            maxW="container.md"
+                            color={'whiteAlpha.700'}
+                        >
                             <Component {...pageProps} />
                         </Container>
                     </Box>

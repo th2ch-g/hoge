@@ -12,16 +12,16 @@ const Navbar = () => {
             fontSize={30}
         >
             <Box>
-                <Text> th2ch-g</Text>
+                <Text> th2ch-g HP</Text>
             </Box>
             <Flex gap={{ base: 30, sm: 100 }}>
                 <NavbarItem
-                    label="Home"
-                    href="/"
+                    label="home"
+                    href="/home"
                 />{' '}
                 <NavbarItem
-                    label="Blog"
-                    href="/xxx"
+                    label="blog"
+                    href="/blog"
                 />{' '}
             </Flex>
         </Flex>
