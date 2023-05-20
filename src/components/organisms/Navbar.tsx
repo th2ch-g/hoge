@@ -17,7 +17,7 @@ const Navbar = () => {
             <Flex gap={{ base: 30, sm: 100 }}>
                 <NavbarItem
                     label="home"
-                    href="/home"
+                    href="/home/home"
                 />{' '}
                 <NavbarItem
                     label="blog"
