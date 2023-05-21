@@ -18,11 +18,11 @@ const Navbar = () => {
             <Flex gap={{ base: 30, sm: 100 }}>
                 <NavbarItem
                     label="home"
-                    href={path + "home"}
+                    href={path + 'home'}
                 />{' '}
                 <NavbarItem
-                    label="blog"
-                    href={path + "blog"}
+                    label="works"
+                    href={path + 'works'}
                 />{' '}
             </Flex>
         </Flex>

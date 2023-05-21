@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     <Box flexGrow={1}>
                         <Container
                             maxW="container.md"
-                            color={'whiteAlpha.700'}
+                            color={'blackAlpha.900'}
                         >
                             <Component {...pageProps} />
                         </Container>
