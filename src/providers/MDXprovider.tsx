@@ -1,6 +1,7 @@
 import { MDXProvider } from '@mdx-js/react';
 import { MDXComponents } from 'mdx/types';
 import {
+    Flex,
     Code,
     Box,
     AspectRatio,
