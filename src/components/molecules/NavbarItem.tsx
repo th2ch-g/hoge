@@ -19,6 +19,7 @@ export const NavbarItem = ({
         <ChakraLink
             as={NextLink}
             href={href}
+            _hover={{color: "pink", fontWeight: "500"}}
         >
             {label}
         </ChakraLink>
