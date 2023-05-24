@@ -1,6 +1,5 @@
 // next.config.js
 
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // Configure pageExtensions to include md and mdx
@@ -9,7 +8,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
         unoptimized: true,
-    }
+    },
 };
 
 export default nextConfig;

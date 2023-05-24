@@ -1,4 +1,4 @@
-import { Flex, Square, Center, Text, Box } from '@chakra-ui/react';
+import { Flex, Square, Center, Text, Box, GridItem, Grid, Card, SimpleGrid, CardHeader, CardBody, CardFooter } from '@chakra-ui/react';
 import { NavbarItem } from '#/components/molecules/NavbarItem';
 
 const Navbar = () => {
@@ -12,32 +12,21 @@ const Navbar = () => {
                 justify="space-between"
                 color="white"
                 fontSize={30}
-            >                    <NavbarItem
-                    label="home"
-                    href={path + 'home'}
+            >
+                <NavbarItem
+                    label="top"
+                    href={path + '#top'}
+                />{' '}
+                <NavbarItem
+                    label="bio"
+                    href={path + '#bio'}
                 />{' '}
                 <NavbarItem
                     label="works"
-                    href={path + '#contact'}
+                    href={path + '#works'}
                 />{' '}
                 <NavbarItem
-                    label="works"
-                    href={path + '#contact'}
-                />{' '}
-                <NavbarItem
-                    label="works"
-                    href={path + '#contact'}
-                />{' '}
-                <NavbarItem
-                    label="works"
-                    href={path + '#contact'}
-                />{' '}
-                <NavbarItem
-                    label="works"
-                    href={path + '#contact'}
-                />{' '}
-                <NavbarItem
-                    label="works"
+                    label="contact"
                     href={path + '#contact'}
                 />{' '}
             </Flex>

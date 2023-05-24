@@ -2,7 +2,7 @@
 
 -   Typescript
     -   React
-    -   MDX
+    -   Chakra
 
 **Special Thanks**
 

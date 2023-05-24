@@ -1,10 +1,22 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Noto_Sans_JP } from 'next/font/google';
-import { Stack, Box, Icon, SimpleGrid, Card, CardBody, CardHeader, CardFooter } from '@chakra-ui/react';
-import { AiFillGithub } from "react-icons/ai"
+import {
+    Stack,
+    Box,
+    Icon,
+    SimpleGrid,
+    Card,
+    CardBody,
+    CardHeader,
+    CardFooter,
+    Center,
+    Spacer
+} from '@chakra-ui/react';
+import { AiFillGithub } from 'react-icons/ai';
+import { GoLogoGist } from 'react-icons/go';
 
-const notoSanJP = Noto_Sans_JP({ subsets: ["latin"] })
+const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
 export default function Home() {
     return (
@@ -21,61 +33,113 @@ export default function Home() {
                 />
                 <link
                     rel="icon"
-                    href="/favicon.ico"
+                    href="/icon.jpg"
                 />
             </Head>
 
-            <Box className={notoSanJP.className}>
-
-                <Box textAlign="center" fontSize={100}>
+            <Box className={notoSanJP.className} marginY={10}>
+                <Box
+                    textAlign="center"
+                    fontSize={50}
+                    id="top"
+                >
                     th2ch-g
                 </Box>
 
-                <Image src="" width={100} height={100} alt="Figure not found" />
+                <Box textAlign="center"> Bioinformatics, MD simulation, Genome analysis </Box>
 
-                <Stack direction={'row'}>
+                <Center>
+                    <Stack direction={'row'}>
+                        <Icon
+                            as={AiFillGithub}
+                            boxSize={50}
+                            href='https://github.com/th2ch-g'
+                        />
+                        <Icon
+                            as={GoLogoGist}
+                            boxSize={50}
+                            href="https://gist.github.com/th2ch-g"
+                        />
+                    </Stack>
+                </Center>
 
-                    <Icon as={AiFillGithub} boxSize={100}/>
-                    <Icon as={AiFillGithub} boxSize={100}/>
-                    <Icon as={AiFillGithub} boxSize={100}/>
+                <Center marginY={10}>
+                    <Image
+                        src="/tmp2.jpg"
+                        width={400}
+                        height={200}
+                        alt="Figure not found"
+                    />
+                </Center>
 
-                </Stack>
+                <Box
+                    textAlign="center"
+                    fontSize={50}
+                    id="bio"
+                >
+                    Biography
+                </Box>
 
 
-                <SimpleGrid columns={2} marginTop={10} spacing={100}>
+
+                <Box
+                    textAlign="center"
+                    fontSize={50}
+                    id="works"
+                >
+                    Works
+                </Box>
+
+                <SimpleGrid
+                    columns={2}
+                    marginTop={10}
+                    spacing={100}
+                >
                     <Box>
                         <Card>
-                            <CardBody>
-                                aldsjfhla;sdkjfha;ldsjhf
-                            </CardBody>
+                            <CardBody>aldsjfhla;sdkjfha;ldsjhf</CardBody>
                         </Card>
                     </Box>
                     <Box>
-                        a;kjsdhf;aksjdhf;akjdshf
+                        <Card
+                            direction={{ base: 'column', sm: 'row' }}
+                            overflow='hidden'
+                            variant='outline'
+                        >
+                            <Image
+                                src='https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png'
+                                width={100}
+                                height={100}
+                                alt='Image not found'
+                            />
+
+                            <Stack>
+                                <CardBody>
+
+                                </CardBody>
+
+                                <CardFooter>
+
+                                </CardFooter>
+                            </Stack>
+                        </Card>
                     </Box>
-                    <Box>
-                        a;kjsdhf;aksjdhf;akjdshf
-                    </Box>
-                    <Box>
-                        a;kjsdhf;aksjdhf;akjdshf
-                    </Box>
-                    <Box>
-                        a;kjsdhf;aksjdhf;akjdshf
-                    </Box>
-                    <Box>
-                        a;kjsdhf;aksjdhf;akjdshf
-                    </Box>
+                    <Box>a;kjsdhf;aksjdhf;akjdshf</Box>
+                    <Box>a;kjsdhf;aksjdhf;akjdshf</Box>
+                    <Box>a;kjsdhf;aksjdhf;akjdshf</Box>
+                    <Box>a;kjsdhf;aksjdhf;akjdshf</Box>
                 </SimpleGrid>
 
-
-                <Box textAlign="center" fontSize={100} id='contact'>
-                    Contact 
-                </Box>
-
-                <Box textAlign="center">
+                <Box
+                    textAlign="center"
+                    fontSize={50}
+                    id="contact"
+                    marginY={10}
+                >
                     Contact
                 </Box>
 
+                <Box textAlign="center">email: </Box>
             </Box>
         </>
     );
