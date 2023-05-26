@@ -10,14 +10,8 @@ const Footer = () => {
             bg="black"
             color="white"
             paddingY={30}
-            blockSize={10}
         >
-            <Text
-                fontSize={15}
-                mx="auto"
-            >
-                ©2023 - th2ch-g
-            </Text>
+            ©2023 - th2ch-g
         </Box>
     );
 };

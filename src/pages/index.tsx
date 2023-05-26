@@ -18,6 +18,8 @@ import {
 } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 import { GoLogoGist } from 'react-icons/go';
+import { GrHome } from 'react-icons/gr';
+import NextLink from 'next/link';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
@@ -60,16 +62,24 @@ export default function Home() {
 
                 <Center>
                     <Stack direction={'row'}>
-                        <Icon
-                            as={AiFillGithub}
-                            boxSize={50}
-                            href="https://github.com/th2ch-g"
-                        />
-                        <Icon
-                            as={GoLogoGist}
-                            boxSize={50}
-                            href="https://gist.github.com/th2ch-g"
-                        />
+                        <NextLink href="https://th2ch-g.github.io/home/">
+                            <Icon
+                                as={GrHome}
+                                boxSize={50}
+                            />
+                        </NextLink>
+                        <NextLink href="https://github.com/th2ch-g">
+                            <Icon
+                                as={AiFillGithub}
+                                boxSize={50}
+                            />
+                        </NextLink>
+                        <NextLink href="https://gist.github.com/th2ch-g">
+                            <Icon
+                                as={GoLogoGist}
+                                boxSize={50}
+                            />
+                        </NextLink>
                     </Stack>
                 </Center>
 
@@ -87,6 +97,7 @@ export default function Home() {
                     fontSize={50}
                     id="bio"
                     marginY={10}
+                    scrollMargin="50"
                 >
                     Biography
                 </Box>
@@ -125,7 +136,7 @@ export default function Home() {
                             variant="outline"
                         >
                             <Image
-                                src="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png"
+                                src="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png?raw=True"
                                 width={100}
                                 height={100}
                                 alt="Image not found"

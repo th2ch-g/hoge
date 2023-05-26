@@ -20,6 +20,7 @@ export const NavbarItem = ({
             as={NextLink}
             href={href}
             _hover={{ color: 'darkolivegreen', fontWeight: '500' }}
+            textAlign="center"
         >
             {label}
         </ChakraLink>

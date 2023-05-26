@@ -18,7 +18,35 @@ const Navbar = () => {
     const path = process.env.NODE_ENV === 'production' ? '/home/' : '/';
     return (
         <>
-            <Flex
+            <SimpleGrid
+                px={30}
+                py={3}
+                bg="black"
+                color="white"
+                fontSize={20}
+                position="fixed"
+                width="full"
+                columns={4}
+            >
+                <NavbarItem
+                    label="top"
+                    href={path + '/'}
+                />{' '}
+                <NavbarItem
+                    label="bio"
+                    href={path + '#bio'}
+                />{' '}
+                <NavbarItem
+                    label="research"
+                    href={path + '#research'}
+                />{' '}
+                <NavbarItem
+                    label="works"
+                    href={path + '#works'}
+                />{' '}
+
+            </SimpleGrid>
+            {/* <Flex
                 px={30}
                 py={3}
                 bg="black"
@@ -44,7 +72,7 @@ const Navbar = () => {
                     label="works"
                     href={path + '#works'}
                 />{' '}
-            </Flex>
+            </Flex> */}
         </>
     );
 };
