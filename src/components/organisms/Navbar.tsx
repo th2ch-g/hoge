@@ -26,53 +26,21 @@ const Navbar = () => {
                 fontSize={20}
                 position="fixed"
                 width="full"
-                columns={4}
+                columns={3}
             >
                 <NavbarItem
                     label="top"
                     href={path + '/'}
                 />{' '}
                 <NavbarItem
-                    label="bio"
-                    href={path + '#bio'}
-                />{' '}
-                <NavbarItem
-                    label="research"
-                    href={path + '#research'}
+                    label="skill"
+                    href={path + '#skill'}
                 />{' '}
                 <NavbarItem
                     label="works"
                     href={path + '#works'}
                 />{' '}
-
             </SimpleGrid>
-            {/* <Flex
-                px={30}
-                py={3}
-                bg="black"
-                justify="space-between"
-                color="white"
-                fontSize={20}
-                position="fixed"
-                width="full"
-            >
-                <NavbarItem
-                    label="top"
-                    href={path + '/'}
-                />{' '}
-                <NavbarItem
-                    label="bio"
-                    href={path + '#bio'}
-                />{' '}
-                <NavbarItem
-                    label="research"
-                    href={path + '#research'}
-                />{' '}
-                <NavbarItem
-                    label="works"
-                    href={path + '#works'}
-                />{' '}
-            </Flex> */}
         </>
     );
 };
