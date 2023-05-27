@@ -27,6 +27,7 @@ const Navbar = () => {
                 position="fixed"
                 width="full"
                 columns={3}
+                zIndex={10}
             >
                 <NavbarItem
                     label="top"

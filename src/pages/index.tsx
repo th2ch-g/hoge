@@ -121,17 +121,17 @@ export default function Home() {
                 </Box>
 
                 <Center>
-                    <List spacing={3}>
+                    <List spacing={3} fontSize={15}>
                         <ListItem>
-                            <ListIcon as={AiFillCode} color='green.500' />
+                            <ListIcon as={AiFillCode} color='green.500' boxSize={25}/>
                             Rust, Python, C++, Typescript, LaTeX, Vim, GIt, Docker, UNIX, Supercomputer
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={SiMicrogenetics} color='green.500' />
+                            <ListIcon as={SiMicrogenetics} color='green.500' boxSize={25}/>
                             Genome analysis, Genome assemble, Gene annotation, Expression analysis
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={GiBottomRight3DArrow} color='green.500' />
+                            <ListIcon as={GiBottomRight3DArrow} color='green.500' boxSize={25}/>
                             MD simulation, GROMACS, AMBER, VMD, ChimeraX, MDtraj, QMMM
                         </ListItem>
                     </List>
