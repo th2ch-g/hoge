@@ -31,6 +31,7 @@ const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
 export default function Home() {
     const path = process.env.NODE_ENV === 'production' ? '/home/' : '/';
+    const alt_string = "Image not found";
     return (
         <>
             <Head>
@@ -104,7 +105,7 @@ export default function Home() {
                         src={path + 'tmp2.jpg'}
                         width={400}
                         height={200}
-                        alt="Figure not found"
+                        alt={alt_string}
                     />
                 </Center>
                 <Box textAlign="center">
@@ -138,7 +139,7 @@ export default function Home() {
                         <ListItem>
                             <ListIcon
                                 as={AiFillCode}
-                                color="green.500"
+                                color="darkolivegreen"
                                 boxSize={25}
                             />
                             Rust, Python, C++, Typescript, LaTeX, Vim, GIt,
@@ -147,7 +148,7 @@ export default function Home() {
                         <ListItem>
                             <ListIcon
                                 as={SiMicrogenetics}
-                                color="green.500"
+                                color="darkolivegreen"
                                 boxSize={25}
                             />
                             Genome analysis, Genome assemble, Gene annotation,
@@ -156,7 +157,7 @@ export default function Home() {
                         <ListItem>
                             <ListIcon
                                 as={GiBottomRight3DArrow}
-                                color="green.500"
+                                color="darkolivegreen"
                                 boxSize={25}
                             />
                             MD simulation, GROMACS, AMBER, VMD, ChimeraX,
@@ -199,7 +200,7 @@ export default function Home() {
                                     src={path + 'home.png'}
                                     width={400}
                                     height={200}
-                                    alt="Image not found"
+                                    alt={alt_string}
                                 />
                             </Center>
                             <Box marginY={5}>
@@ -240,7 +241,7 @@ export default function Home() {
                                     src="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png?raw=true"
                                     width={400}
                                     height={200}
-                                    alt="Image not found"
+                                    alt={alt_string}
                                 />
                             </Center>
                             <Box marginY={5}>
@@ -276,7 +277,7 @@ export default function Home() {
                                     src="dotfiles.png"
                                     width={400}
                                     height={200}
-                                    alt="Image not found"
+                                    alt={alt_string}
                                 />
                             </Center>
                             <Box marginY={5}>hogehoge</Box>
@@ -305,7 +306,7 @@ export default function Home() {
                                     src="Scholarship.png"
                                     width={400}
                                     height={200}
-                                    alt="Image not found"
+                                    alt={alt_string}
                                 />
                             </Center>
                             <Box marginY={5}>hogehoge</Box>
@@ -334,7 +335,7 @@ export default function Home() {
                                     src="parrot-rs.png"
                                     width={400}
                                     height={200}
-                                    alt="Image not found"
+                                    alt={alt_string}
                                 />
                             </Center>
                             <Box marginY={5}>hogehoge</Box>
