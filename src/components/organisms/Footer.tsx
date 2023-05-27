@@ -1,6 +1,4 @@
-import { Flex, Square, Center, Text, Box } from '@chakra-ui/react';
-import { NavbarItem } from '#/components/molecules/NavbarItem';
-import { AiFillExclamationCircle } from 'react-icons/ai';
+import { Box } from '@chakra-ui/react';
 
 const Footer = () => {
     const path = process.env.NODE_ENV === 'production' ? '/home/' : '/';

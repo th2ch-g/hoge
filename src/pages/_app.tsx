@@ -1,6 +1,5 @@
 import type { AppProps } from 'next/app';
 import { Box, ChakraProvider, Container, Stack } from '@chakra-ui/react';
-
 import Navbar from '../components/organisms/Navbar';
 import Footer from '#/components/organisms/Footer';
 

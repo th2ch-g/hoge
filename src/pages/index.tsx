@@ -11,10 +11,6 @@ import {
     CardHeader,
     CardFooter,
     Center,
-    Spacer,
-    WrapItem,
-    Wrap,
-    Button,
     List,
     ListItem,
     ListIcon,
@@ -29,7 +25,6 @@ import { GrHome } from 'react-icons/gr';
 import { AiFillCode } from 'react-icons/ai';
 import { SiMicrogenetics } from 'react-icons/si';
 import { GiBottomRight3DArrow } from 'react-icons/gi';
-import { SiTypescript } from 'react-icons/si';
 import NextLink from 'next/link';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
@@ -58,7 +53,6 @@ export default function Home() {
                 className={notoSanJP.className}
                 marginY={100}
             >
-
                 {/* TOP */}
                 <Box
                     textAlign="center"
@@ -70,25 +64,33 @@ export default function Home() {
 
                 <Box textAlign="center">
                     {' '}
-                    Bioinformatics, MD simulation, Genome analysis, Wasabi
-                    {' '}
+                    Bioinformatics, MD simulation, Genome analysis, Wasabi{' '}
                 </Box>
 
                 <Center marginY={5}>
                     <Stack direction={'row'}>
-                        <NextLink href="https://th2ch-g.github.io/home/" target="_blank">
+                        <NextLink
+                            href="https://th2ch-g.github.io/home/"
+                            target="_blank"
+                        >
                             <Icon
                                 as={GrHome}
                                 boxSize={50}
                             />
                         </NextLink>
-                        <NextLink href="https://github.com/th2ch-g" target="_blank">
+                        <NextLink
+                            href="https://github.com/th2ch-g"
+                            target="_blank"
+                        >
                             <Icon
                                 as={AiFillGithub}
                                 boxSize={50}
                             />
                         </NextLink>
-                        <NextLink href="https://gist.github.com/th2ch-g" target="_blank">
+                        <NextLink
+                            href="https://gist.github.com/th2ch-g"
+                            target="_blank"
+                        >
                             <Icon
                                 as={GoLogoGist}
                                 boxSize={50}
@@ -106,9 +108,16 @@ export default function Home() {
                     />
                 </Center>
                 <Box textAlign="center">
-                    Taken by th2ch-g at <ChakraLink color="blue.500" as={NextLink} href="https://www.daiowasabi.co.jp/" target="_blank">Daiowasabi</ChakraLink>
+                    Taken by th2ch-g at{' '}
+                    <ChakraLink
+                        color="blue.500"
+                        as={NextLink}
+                        href="https://www.daiowasabi.co.jp/"
+                        target="_blank"
+                    >
+                        Daiowasabi
+                    </ChakraLink>
                 </Box>
-
 
                 {/* Skill */}
                 <Box
@@ -122,18 +131,36 @@ export default function Home() {
                 </Box>
 
                 <Center>
-                    <List spacing={3} fontSize={15}>
+                    <List
+                        spacing={3}
+                        fontSize={15}
+                    >
                         <ListItem>
-                            <ListIcon as={AiFillCode} color='green.500' boxSize={25}/>
-                            Rust, Python, C++, Typescript, LaTeX, Vim, GIt, Docker, UNIX, Supercomputer
+                            <ListIcon
+                                as={AiFillCode}
+                                color="green.500"
+                                boxSize={25}
+                            />
+                            Rust, Python, C++, Typescript, LaTeX, Vim, GIt,
+                            Docker, UNIX, Supercomputer
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={SiMicrogenetics} color='green.500' boxSize={25}/>
-                            Genome analysis, Genome assemble, Gene annotation, Expression analysis
+                            <ListIcon
+                                as={SiMicrogenetics}
+                                color="green.500"
+                                boxSize={25}
+                            />
+                            Genome analysis, Genome assemble, Gene annotation,
+                            Expression analysis
                         </ListItem>
                         <ListItem>
-                            <ListIcon as={GiBottomRight3DArrow} color='green.500' boxSize={25}/>
-                            MD simulation, GROMACS, AMBER, VMD, ChimeraX, MDtraj, QMMM
+                            <ListIcon
+                                as={GiBottomRight3DArrow}
+                                color="green.500"
+                                boxSize={25}
+                            />
+                            MD simulation, GROMACS, AMBER, VMD, ChimeraX,
+                            MDtraj, QMMM
                         </ListItem>
                     </List>
                 </Center>
@@ -149,27 +176,44 @@ export default function Home() {
                     Works
                 </Box>
 
-                <Box textAlign="center" fontSize={15} marginY={5}>
-                    See CV for detailed information about my research such as papers, presentations, etc.
+                <Box
+                    textAlign="center"
+                    fontSize={15}
+                    marginY={5}
+                >
+                    See CV for detailed information about my research such as
+                    papers, presentations, etc.
                 </Box>
 
                 <Box marginY={5}>
                     <Card bg="whitesmoke">
-                        <CardHeader textAlign="center" fontSize={25}>
+                        <CardHeader
+                            textAlign="center"
+                            fontSize={25}
+                        >
                             Home Page
                         </CardHeader>
                         <CardBody>
                             <Center>
                                 <Image
-                                    src={path + "home.png"}
+                                    src={path + 'home.png'}
                                     width={400}
                                     height={200}
                                     alt="Image not found"
                                 />
                             </Center>
                             <Box marginY={5}>
-                                I created this web site in Typescirpt for my portfolio, using mainly React and Chakra.
-                                Thanks <ChakraLink color="blue.500" as={NextLink} href="https://github.com/calliope-pro" target="_blank">@calliope</ChakraLink> for the advice.
+                                I created this web site in Typescirpt for my
+                                portfolio, using mainly React and Chakra. Thanks{' '}
+                                <ChakraLink
+                                    color="blue.500"
+                                    as={NextLink}
+                                    href="https://github.com/calliope-pro"
+                                    target="_blank"
+                                >
+                                    @calliope
+                                </ChakraLink>{' '}
+                                for the advice.
                             </Box>
                         </CardBody>
                     </Card>
@@ -177,8 +221,18 @@ export default function Home() {
 
                 <Box marginY={5}>
                     <Card bg="whitesmoke">
-                        <CardHeader textAlign="center" fontSize={25}>
-                            <ChakraLink color="black" as={NextLink} href="https://github.com/th2ch-g/rust-top_message/" target="_blank">rust-top_message</ChakraLink>
+                        <CardHeader
+                            textAlign="center"
+                            fontSize={25}
+                        >
+                            <ChakraLink
+                                color="black"
+                                as={NextLink}
+                                href="https://github.com/th2ch-g/rust-top_message/"
+                                target="_blank"
+                            >
+                                rust-top_message
+                            </ChakraLink>
                         </CardHeader>
                         <CardBody>
                             <Center>
@@ -190,20 +244,31 @@ export default function Home() {
                                 />
                             </Center>
                             <Box marginY={5}>
-                                This is super useless CLI tool created originally to prank seniors on the lab server.
-                                It eats your computing resources using parallel computing.
-                                This logo was created by a graduating senior 10min. 
-                                You can also use this tool on multiple nodes because MPI is also available. 
+                                This is super useless CLI tool created
+                                originally to prank seniors on the lab server.
+                                It eats your computing resources using parallel
+                                computing. This logo was created by a graduating
+                                senior 10min. You can also use this tool on
+                                multiple nodes because MPI is also available.
                             </Box>
                         </CardBody>
                     </Card>
                 </Box>
 
-
                 <Box marginY={5}>
                     <Card bg="whitesmoke">
-                        <CardHeader textAlign="center" fontSize={25}>
-                            <ChakraLink color="black" as={NextLink} href="https://github.com/th2ch-g/dotfiles" target="_blank">dotfiles</ChakraLink>
+                        <CardHeader
+                            textAlign="center"
+                            fontSize={25}
+                        >
+                            <ChakraLink
+                                color="black"
+                                as={NextLink}
+                                href="https://github.com/th2ch-g/dotfiles"
+                                target="_blank"
+                            >
+                                dotfiles
+                            </ChakraLink>
                         </CardHeader>
                         <CardBody>
                             <Center>
@@ -214,17 +279,25 @@ export default function Home() {
                                     alt="Image not found"
                                 />
                             </Center>
-                            <Box marginY={5}>
-                                hogehoge
-                            </Box>
+                            <Box marginY={5}>hogehoge</Box>
                         </CardBody>
                     </Card>
                 </Box>
 
                 <Box marginY={5}>
                     <Card bg="whitesmoke">
-                        <CardHeader textAlign="center" fontSize={25}>
-                            <ChakraLink color="black" as={NextLink} href="https://scholar-1-e4000274.deta.app/" target="_blank">Scholarship search site for TokyoTech</ChakraLink>
+                        <CardHeader
+                            textAlign="center"
+                            fontSize={25}
+                        >
+                            <ChakraLink
+                                color="black"
+                                as={NextLink}
+                                href="https://scholar-1-e4000274.deta.app/"
+                                target="_blank"
+                            >
+                                Scholarship search site for TokyoTech
+                            </ChakraLink>
                         </CardHeader>
                         <CardBody>
                             <Center>
@@ -235,17 +308,25 @@ export default function Home() {
                                     alt="Image not found"
                                 />
                             </Center>
-                            <Box marginY={5}>
-                                hogehoge
-                            </Box>
+                            <Box marginY={5}>hogehoge</Box>
                         </CardBody>
                     </Card>
                 </Box>
 
                 <Box marginY={5}>
                     <Card bg="whitesmoke">
-                        <CardHeader textAlign="center" fontSize={25}>
-                            <ChakraLink color="black" as={NextLink} href="https://github.com/th2ch-g/parrot-rs" target="_blank">parrot-rs</ChakraLink>
+                        <CardHeader
+                            textAlign="center"
+                            fontSize={25}
+                        >
+                            <ChakraLink
+                                color="black"
+                                as={NextLink}
+                                href="https://github.com/th2ch-g/parrot-rs"
+                                target="_blank"
+                            >
+                                parrot-rs
+                            </ChakraLink>
                         </CardHeader>
                         <CardBody>
                             <Center>
@@ -256,13 +337,10 @@ export default function Home() {
                                     alt="Image not found"
                                 />
                             </Center>
-                            <Box marginY={5}>
-                                hogehoge
-                            </Box>
+                            <Box marginY={5}>hogehoge</Box>
                         </CardBody>
                     </Card>
                 </Box>
-
             </Box>
         </>
     );

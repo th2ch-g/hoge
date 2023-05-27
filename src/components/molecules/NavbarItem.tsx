@@ -1,12 +1,5 @@
 import NextLink from 'next/link';
-import {
-    Flex,
-    Square,
-    Center,
-    Text,
-    Box,
-    Link as ChakraLink,
-} from '@chakra-ui/react';
+import { Link as ChakraLink } from '@chakra-ui/react';
 
 export const NavbarItem = ({
     label,

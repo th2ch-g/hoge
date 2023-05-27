@@ -1,17 +1,4 @@
-import {
-    Flex,
-    Square,
-    Center,
-    Text,
-    Box,
-    GridItem,
-    Grid,
-    Card,
-    SimpleGrid,
-    CardHeader,
-    CardBody,
-    CardFooter,
-} from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react';
 import { NavbarItem } from '#/components/molecules/NavbarItem';
 
 const Navbar = () => {
