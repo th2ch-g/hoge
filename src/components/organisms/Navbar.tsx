@@ -31,7 +31,7 @@ const Navbar = () => {
             >
                 <NavbarItem
                     label="top"
-                    href={path + '/'}
+                    href={path}
                 />{' '}
                 <NavbarItem
                     label="skill"

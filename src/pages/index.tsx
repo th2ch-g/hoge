@@ -116,6 +116,7 @@ export default function Home() {
                     fontSize={50}
                     id="skill"
                     marginY={5}
+                    scrollMargin={50}
                 >
                     Skill
                 </Box>
@@ -143,6 +144,7 @@ export default function Home() {
                     fontSize={50}
                     id="works"
                     marginY={30}
+                    scrollMargin={50}
                 >
                     Works
                 </Box>
