@@ -25,13 +25,15 @@ import { GrHome } from 'react-icons/gr';
 import { AiFillCode } from 'react-icons/ai';
 import { SiMicrogenetics } from 'react-icons/si';
 import { GiBottomRight3DArrow } from 'react-icons/gi';
+import { VscTools } from 'react-icons/vsc';
+import { GiSkills } from 'react-icons/gi'; 
 import NextLink from 'next/link';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
 export default function Home() {
     const path = process.env.NODE_ENV === 'production' ? '/home/' : '/';
-    const alt_string = "Image not found";
+    const alt_string = 'Image not found';
     return (
         <>
             <Head>
@@ -102,7 +104,7 @@ export default function Home() {
 
                 <Center>
                     <Image
-                        src={path + 'tmp2.jpg'}
+                        src={path + 'daiowasabi1.jpg'}
                         width={400}
                         height={200}
                         alt={alt_string}
@@ -128,10 +130,14 @@ export default function Home() {
                     marginY={5}
                     scrollMargin={50}
                 >
-                    Skill
+                     <Icon
+                        as={GiSkills}
+                        boxSize={45}
+                    />
+                    {' '}Skill{' '}
                 </Box>
 
-                <Center>
+                <Center marginY={10}>
                     <List
                         spacing={3}
                         fontSize={15}
@@ -174,7 +180,11 @@ export default function Home() {
                     marginY={30}
                     scrollMargin={50}
                 >
-                    Works
+                    <Icon
+                        as={VscTools}
+                        boxSize={45}
+                    />
+                    {' '}Works{' '}
                 </Box>
 
                 <Box
@@ -190,14 +200,22 @@ export default function Home() {
                     <Card bg="whitesmoke">
                         <CardHeader
                             textAlign="center"
-                            fontSize={25}
+                            fontSize={30}
                         >
-                            Home Page
+                            <ChakraLink
+                                color="darkolivegreen"
+                                fontFamily="heading"
+                                as={NextLink}
+                                href="https://th2ch-g.github.io/home/"
+                                target="_blank"
+                            >
+                                Home page
+                            </ChakraLink>
                         </CardHeader>
                         <CardBody>
                             <Center>
                                 <Image
-                                    src={path + 'home.png'}
+                                    src={path + 'works/home.png'}
                                     width={400}
                                     height={200}
                                     alt={alt_string}
@@ -224,10 +242,11 @@ export default function Home() {
                     <Card bg="whitesmoke">
                         <CardHeader
                             textAlign="center"
-                            fontSize={25}
+                            fontSize={30}
                         >
                             <ChakraLink
-                                color="black"
+                                color="darkolivegreen"
+                                fontFamily="heading"
                                 as={NextLink}
                                 href="https://github.com/th2ch-g/rust-top_message/"
                                 target="_blank"
@@ -260,10 +279,11 @@ export default function Home() {
                     <Card bg="whitesmoke">
                         <CardHeader
                             textAlign="center"
-                            fontSize={25}
+                            fontSize={30}
                         >
                             <ChakraLink
-                                color="black"
+                                color="darkolivegreen"
+                                fontFamily="heading"
                                 as={NextLink}
                                 href="https://github.com/th2ch-g/dotfiles"
                                 target="_blank"
@@ -274,13 +294,18 @@ export default function Home() {
                         <CardBody>
                             <Center>
                                 <Image
-                                    src="dotfiles.png"
+                                    src={path + 'works/dotfiles.png'}
                                     width={400}
                                     height={200}
                                     alt={alt_string}
                                 />
                             </Center>
-                            <Box marginY={5}>hogehoge</Box>
+                            <Box marginY={5}>
+                                This is a repository of my settings. This has
+                                been very helpful because I use several
+                                supercomputers in my research. It is also used
+                                by juniors in the lab and is well received.
+                            </Box>
                         </CardBody>
                     </Card>
                 </Box>
@@ -289,10 +314,11 @@ export default function Home() {
                     <Card bg="whitesmoke">
                         <CardHeader
                             textAlign="center"
-                            fontSize={25}
+                            fontSize={30}
                         >
                             <ChakraLink
-                                color="black"
+                                color="darkolivegreen"
+                                fontFamily="heading"
                                 as={NextLink}
                                 href="https://scholar-1-e4000274.deta.app/"
                                 target="_blank"
@@ -303,44 +329,44 @@ export default function Home() {
                         <CardBody>
                             <Center>
                                 <Image
-                                    src="Scholarship.png"
+                                    src={path + 'works/Scholarship.png'}
                                     width={400}
                                     height={200}
                                     alt={alt_string}
                                 />
                             </Center>
-                            <Box marginY={5}>hogehoge</Box>
+                            <Box marginY={5}>
+                                Tokyo Tech scholarship website was so difficult
+                                to use that{' '}
+                                <ChakraLink
+                                    color="blue.500"
+                                    as={NextLink}
+                                    href="https://github.com/calliope-pro"
+                                    target="_blank"
+                                >
+                                    @calliope
+                                </ChakraLink>{' '}
+                                and I created it together. By the way, this site
+                                failed in the google adsense screening.
+                            </Box>
                         </CardBody>
                     </Card>
                 </Box>
 
-                <Box marginY={5}>
-                    <Card bg="whitesmoke">
-                        <CardHeader
-                            textAlign="center"
-                            fontSize={25}
-                        >
-                            <ChakraLink
-                                color="black"
-                                as={NextLink}
-                                href="https://github.com/th2ch-g/parrot-rs"
-                                target="_blank"
-                            >
-                                parrot-rs
-                            </ChakraLink>
-                        </CardHeader>
-                        <CardBody>
-                            <Center>
-                                <Image
-                                    src="parrot-rs.png"
-                                    width={400}
-                                    height={200}
-                                    alt={alt_string}
-                                />
-                            </Center>
-                            <Box marginY={5}>hogehoge</Box>
-                        </CardBody>
-                    </Card>
+                <Box
+                    textAlign="center"
+                    marginY={10}
+                >
+                    For other works, please visit{' '}
+                    <ChakraLink
+                        color="blue.500"
+                        as={NextLink}
+                        href="https://github.com/th2ch-g"
+                        target="_blank"
+                    >
+                        github
+                    </ChakraLink>{' '}
+                    and other sites.
                 </Box>
             </Box>
         </>
