@@ -1,7 +1,6 @@
 import { Box } from '@chakra-ui/react';
 
 const Footer = () => {
-    const path = process.env.NODE_ENV === 'production' ? '/home/' : '/';
     return (
         <Box
             textAlign="center"

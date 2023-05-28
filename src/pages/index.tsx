@@ -26,7 +26,7 @@ import { AiFillCode } from 'react-icons/ai';
 import { SiMicrogenetics } from 'react-icons/si';
 import { GiBottomRight3DArrow } from 'react-icons/gi';
 import { VscTools } from 'react-icons/vsc';
-import { GiSkills } from 'react-icons/gi'; 
+import { GiSkills } from 'react-icons/gi';
 import NextLink from 'next/link';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
@@ -130,14 +130,14 @@ export default function Home() {
                     marginY={5}
                     scrollMargin={50}
                 >
-                     <Icon
+                    <Icon
                         as={GiSkills}
                         boxSize={45}
-                    />
-                    {' '}Skill{' '}
+                    />{' '}
+                    Skill{' '}
                 </Box>
 
-                <Center marginY={10}>
+                <Center marginY={5}>
                     <List
                         spacing={3}
                         fontSize={15}
@@ -148,7 +148,7 @@ export default function Home() {
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
-                            Rust, Python, C++, Typescript, LaTeX, Vim, GIt,
+                            Rust, Python, C++, Typescript, LaTeX, Vim, Git,
                             Docker, UNIX, Supercomputer
                         </ListItem>
                         <ListItem>
@@ -183,8 +183,8 @@ export default function Home() {
                     <Icon
                         as={VscTools}
                         boxSize={45}
-                    />
-                    {' '}Works{' '}
+                    />{' '}
+                    Works{' '}
                 </Box>
 
                 <Box
