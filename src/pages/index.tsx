@@ -5,18 +5,10 @@ import {
     Stack,
     Box,
     Icon,
-    SimpleGrid,
-    Card,
-    CardBody,
-    CardHeader,
-    CardFooter,
     Center,
     List,
     ListItem,
     ListIcon,
-    OrderedList,
-    UnorderedList,
-    Text,
     Link as ChakraLink,
 } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
@@ -28,6 +20,7 @@ import { GiBottomRight3DArrow } from 'react-icons/gi';
 import { VscTools } from 'react-icons/vsc';
 import { GiSkills } from 'react-icons/gi';
 import NextLink from 'next/link';
+import { WorksCard } from '#/components/molecules/WorksCard';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
@@ -196,162 +189,38 @@ export default function Home() {
                     papers, presentations, etc.
                 </Box>
 
-                <Box marginY={5}>
-                    <Card bg="whitesmoke">
-                        <CardHeader
-                            textAlign="center"
-                            fontSize={30}
-                        >
-                            <ChakraLink
-                                color="darkolivegreen"
-                                fontFamily="heading"
-                                as={NextLink}
-                                href="https://th2ch-g.github.io/home/"
-                                target="_blank"
-                            >
-                                Home page
-                            </ChakraLink>
-                        </CardHeader>
-                        <CardBody>
-                            <Center>
-                                <Image
-                                    src={path + 'works/home.png'}
-                                    width={400}
-                                    height={200}
-                                    alt={alt_string}
-                                />
-                            </Center>
-                            <Box marginY={5}>
-                                I created this web site in Typescirpt for my
-                                portfolio, using mainly React and Chakra. Thanks{' '}
-                                <ChakraLink
-                                    color="blue.500"
-                                    as={NextLink}
-                                    href="https://github.com/calliope-pro"
-                                    target="_blank"
-                                >
-                                    @calliope
-                                </ChakraLink>{' '}
-                                for the advice.
-                            </Box>
-                        </CardBody>
-                    </Card>
-                </Box>
+                <WorksCard
+                    url="https://th2ch-g.github.io/home/"
+                    header="Home page"
+                    alt_string={alt_string}
+                    image_path={path + 'works/home.png'}
+                    content="I created this web site in Typescirpt for my portfolio, using mainly React and Chakra. Thanks @calliope for the advice."
+                />
 
-                <Box marginY={5}>
-                    <Card bg="whitesmoke">
-                        <CardHeader
-                            textAlign="center"
-                            fontSize={30}
-                        >
-                            <ChakraLink
-                                color="darkolivegreen"
-                                fontFamily="heading"
-                                as={NextLink}
-                                href="https://github.com/th2ch-g/rust-top_message/"
-                                target="_blank"
-                            >
-                                rust-top_message
-                            </ChakraLink>
-                        </CardHeader>
-                        <CardBody>
-                            <Center>
-                                <Image
-                                    src="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png?raw=true"
-                                    width={400}
-                                    height={200}
-                                    alt={alt_string}
-                                />
-                            </Center>
-                            <Box marginY={5}>
-                                This is super useless CLI tool created
-                                originally to prank seniors on the lab server.
-                                It eats your computing resources using parallel
-                                computing. This logo was created by a graduating
-                                senior 10min. You can also use this tool on
-                                multiple nodes because MPI is also available.
-                            </Box>
-                        </CardBody>
-                    </Card>
-                </Box>
+                <WorksCard
+                    url="https://github.com/th2ch-g/rust-top_message/"
+                    header="rust-top_message"
+                    alt_string={alt_string}
+                    image_path="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png?raw=true"
+                    content="This is super useless CLI tool created originally to prank seniors on the lab server. It eats your computing resources using parallel computing. This logo was created by a graduating senior 10min. You can also use this tool on multiple nodes because MPI is also available."
+                />
 
-                <Box marginY={5}>
-                    <Card bg="whitesmoke">
-                        <CardHeader
-                            textAlign="center"
-                            fontSize={30}
-                        >
-                            <ChakraLink
-                                color="darkolivegreen"
-                                fontFamily="heading"
-                                as={NextLink}
-                                href="https://github.com/th2ch-g/dotfiles"
-                                target="_blank"
-                            >
-                                dotfiles
-                            </ChakraLink>
-                        </CardHeader>
-                        <CardBody>
-                            <Center>
-                                <Image
-                                    src={path + 'works/dotfiles.png'}
-                                    width={400}
-                                    height={200}
-                                    alt={alt_string}
-                                />
-                            </Center>
-                            <Box marginY={5}>
-                                This is a repository of my settings. This has
-                                been very helpful because I use several
-                                supercomputers in my research. It is also used
-                                by juniors in the lab and is well received.
-                            </Box>
-                        </CardBody>
-                    </Card>
-                </Box>
+                <WorksCard
+                    url="https://github.com/th2ch-g/dotfiles"
+                    header="dotfiles"
+                    alt_string={alt_string}
+                    image_path={path + 'works/dotfiles.png'}
+                    content="
+                    This is a repository of my settings. This has been very helpful because I use several supercomputers in my research. It is also used by juniors in the lab and is well received."
+                />
 
-                <Box marginY={5}>
-                    <Card bg="whitesmoke">
-                        <CardHeader
-                            textAlign="center"
-                            fontSize={30}
-                        >
-                            <ChakraLink
-                                color="darkolivegreen"
-                                fontFamily="heading"
-                                as={NextLink}
-                                href="https://scholar-1-e4000274.deta.app/"
-                                target="_blank"
-                            >
-                                Scholarship search site for TokyoTech
-                            </ChakraLink>
-                        </CardHeader>
-                        <CardBody>
-                            <Center>
-                                <Image
-                                    src={path + 'works/Scholarship.png'}
-                                    width={400}
-                                    height={200}
-                                    alt={alt_string}
-                                />
-                            </Center>
-                            <Box marginY={5}>
-                                Tokyo Tech scholarship website was so difficult
-                                to use that{' '}
-                                <ChakraLink
-                                    color="blue.500"
-                                    as={NextLink}
-                                    href="https://github.com/calliope-pro"
-                                    target="_blank"
-                                >
-                                    @calliope
-                                </ChakraLink>{' '}
-                                and I created it together. By the way, this site
-                                failed in the google adsense screening.
-                            </Box>
-                        </CardBody>
-                    </Card>
-                </Box>
+                <WorksCard
+                    url="https://scholar-1-e4000274.deta.app/"
+                    header="Scholarship search site for TokyoTech"
+                    alt_string={alt_string}
+                    image_path={path + 'works/Scholarship.png'}
+                    content="Tokyo Tech scholarship website was so difficult to use that @calliope and I created it together. By the way, this site failed in the google adsense screening."
+                />
 
                 <Box
                     textAlign="center"
