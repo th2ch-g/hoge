@@ -124,7 +124,9 @@ export default function Home() {
 
                 {/* Skill */}
                 <Box
-                    textAlign="center"
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
                     fontSize={50}
                     id="skill"
                     marginY={5}
@@ -133,8 +135,8 @@ export default function Home() {
                     <Icon
                         as={GiSkills}
                         boxSize={45}
-                    />{' '}
-                    Skill{' '}
+                    />
+                    Skill
                 </Box>
 
                 <Center marginY={5}>
@@ -174,7 +176,9 @@ export default function Home() {
 
                 {/* Works */}
                 <Box
-                    textAlign="center"
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
                     fontSize={50}
                     id="works"
                     marginY={30}
