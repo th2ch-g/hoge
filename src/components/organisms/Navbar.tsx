@@ -19,15 +19,15 @@ const Navbar = () => {
                 <NavbarItem
                     label="top"
                     href={path}
-                />{' '}
+                />
                 <NavbarItem
                     label="skill"
-                    href={path + '#skill'}
-                />{' '}
+                    href="#skill"
+                />
                 <NavbarItem
                     label="works"
-                    href={path + '#works'}
-                />{' '}
+                    href="#works"
+                />
             </SimpleGrid>
         </>
     );
