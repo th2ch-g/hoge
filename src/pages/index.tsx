@@ -43,7 +43,10 @@ export default function Home() {
                     rel="icon"
                     href={path + 'wasabi.jpg'}
                 />
-                <meta property="og:image" content={path + "og_image.jpg"} />
+                <meta
+                    property="og:image"
+                    content={path + 'og_image.jpg'}
+                />
             </Head>
 
             <Box

@@ -1,12 +1,12 @@
 name: yarn auto formatter
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
 
 jobs:
     formatter:
@@ -14,8 +14,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-          - name: Checkout
-            uses: actions/checkout@v3
+            - name: Checkout
+              uses: actions/checkout@v3
 
             - name: setup node
               uses: actions/setup-node@v3
@@ -25,9 +25,9 @@ jobs:
             - name: Install
               run: yarn
 
-          - name: Run Format
-            run: yarn fmt
+            - name: Run Format
+              run: yarn fmt
 
-          - uses: stefanzweifel/git-auto-commit-action@v4
-            with:
-              commit_message: '[Action] yarn fmt'
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: '[Action] yarn fmt'
