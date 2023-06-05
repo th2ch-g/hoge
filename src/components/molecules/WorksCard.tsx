@@ -14,13 +14,13 @@ export const WorksCard = ({
     header,
     alt_string,
     image_path,
-    content,
+    children,
 }: {
     url: string;
     header: string;
     alt_string: string;
     image_path: string;
-    content: string;
+    children: React.ReactNode;
 }) => {
     return (
         <Box marginY={5}>
@@ -48,7 +48,7 @@ export const WorksCard = ({
                             alt={alt_string}
                         />
                     </Center>
-                    <Box marginY={5}>{content}</Box>
+                    <Box marginY={5}>{children}</Box>
                 </CardBody>
             </Card>
         </Box>

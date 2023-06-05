@@ -194,33 +194,62 @@ export default function Home() {
                     header="Home page"
                     alt_string={alt_string}
                     image_path={path + 'works/home.png'}
-                    content="I created this web site in Typescirpt for my portfolio, using mainly React and Chakra. Thanks @calliope for the advice."
-                />
+                >
+                    I created this web site in Typescirpt for my portfolio,
+                    using mainly React and Chakra. Thanks{' '}
+                    <ChakraLink
+                        color="blue.500"
+                        as={NextLink}
+                        href="https://github.com/calliope-pro"
+                        target="_blank"
+                    >
+                        @calliope
+                    </ChakraLink>{' '}
+                    for the advice.
+                </WorksCard>
 
                 <WorksCard
                     url="https://github.com/th2ch-g/rust-top_message/"
                     header="rust-top_message"
                     alt_string={alt_string}
                     image_path="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png?raw=true"
-                    content="This is super useless CLI tool created originally to prank seniors on the lab server. It eats your computing resources using parallel computing. This logo was created by a graduating senior 10min. You can also use this tool on multiple nodes because MPI is also available."
-                />
+                >
+                    This is super useless CLI tool created originally to prank
+                    seniors on the lab server. It eats your computing resources
+                    using parallel computing. This logo was created by a
+                    graduating senior 10min. You can also use this tool on
+                    multiple nodes because MPI is also available.
+                </WorksCard>
 
                 <WorksCard
                     url="https://github.com/th2ch-g/dotfiles"
                     header="dotfiles"
                     alt_string={alt_string}
                     image_path={path + 'works/dotfiles.png'}
-                    content="
-                    This is a repository of my settings. This has been very helpful because I use several supercomputers in my research. It is also used by juniors in the lab and is well received."
-                />
+                >
+                    This is a repository of my settings. This has been very
+                    helpful because I use several supercomputers in my research.
+                    It is also used by juniors in the lab and is well received.
+                </WorksCard>
 
                 <WorksCard
                     url="https://scholar-1-e4000274.deta.app/"
                     header="Scholarship search site for TokyoTech"
                     alt_string={alt_string}
                     image_path={path + 'works/Scholarship.png'}
-                    content="Tokyo Tech scholarship website was so difficult to use that @calliope and I created it together. By the way, this site failed in the google adsense screening."
-                />
+                >
+                    Tokyo Tech scholarship website was so difficult to use that{' '}
+                    <ChakraLink
+                        color="blue.500"
+                        as={NextLink}
+                        href="https://github.com/calliope-pro"
+                        target="_blank"
+                    >
+                        @calliope
+                    </ChakraLink>{' '}
+                    and I created it together. By the way, this site failed in
+                    the google adsense screening.
+                </WorksCard>
 
                 <Box
                     textAlign="center"
