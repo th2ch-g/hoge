@@ -64,7 +64,7 @@ export default function Home() {
 
                 <Box textAlign="center">
                     {' '}
-                    Bioinformatics, MD simulation, Genome analysis, Wasabi{' '}
+                    Bioinformatics, MD simulation, Genome analysis, Wasabi, GPCR{' '}
                 </Box>
 
                 <Center marginY={5}>
@@ -141,16 +141,22 @@ export default function Home() {
                         spacing={3}
                         fontSize={15}
                     >
-                        <ListItem display="flex" alignItems="center">
+                        <ListItem
+                            display="flex"
+                            alignItems="center"
+                        >
                             <ListIcon
                                 as={AiFillCode}
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
                             Rust, Python, C++, Typescript, LaTeX, Vim, Git,
-                            Docker, UNIX, Supercomputer
+                            UNIX, HPC, Docker,
                         </ListItem>
-                        <ListItem display="flex"  alignItems="center" >
+                        <ListItem
+                            display="flex"
+                            alignItems="center"
+                        >
                             <ListIcon
                                 as={SiMicrogenetics}
                                 color="darkolivegreen"
@@ -159,7 +165,10 @@ export default function Home() {
                             Genome analysis, Genome assemble, Gene annotation,
                             Expression analysis
                         </ListItem>
-                        <ListItem display="flex"  alignItems="center" >
+                        <ListItem
+                            display="flex"
+                            alignItems="center"
+                        >
                             <ListIcon
                                 as={GiBottomRight3DArrow}
                                 color="darkolivegreen"
@@ -255,8 +264,9 @@ export default function Home() {
                     >
                         @calliope
                     </ChakraLink>{' '}
-                    and I created it together. By the way, this site failed in
-                    the google adsense screening.
+                    and I created it together. By the way, this web site failed
+                    the goodle ad review once, but for some reason the second
+                    time it was approved.
                 </WorksCard>
 
                 <Box
