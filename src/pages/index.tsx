@@ -141,7 +141,7 @@ export default function Home() {
                         spacing={3}
                         fontSize={15}
                     >
-                        <ListItem>
+                        <ListItem display="flex" alignItems="center">
                             <ListIcon
                                 as={AiFillCode}
                                 color="darkolivegreen"
@@ -150,7 +150,7 @@ export default function Home() {
                             Rust, Python, C++, Typescript, LaTeX, Vim, Git,
                             Docker, UNIX, Supercomputer
                         </ListItem>
-                        <ListItem>
+                        <ListItem display="flex"  alignItems="center" >
                             <ListIcon
                                 as={SiMicrogenetics}
                                 color="darkolivegreen"
@@ -159,7 +159,7 @@ export default function Home() {
                             Genome analysis, Genome assemble, Gene annotation,
                             Expression analysis
                         </ListItem>
-                        <ListItem>
+                        <ListItem display="flex"  alignItems="center" >
                             <ListIcon
                                 as={GiBottomRight3DArrow}
                                 color="darkolivegreen"
