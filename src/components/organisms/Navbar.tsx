@@ -4,7 +4,7 @@ import {
     MenuButton,
     MenuItem,
     MenuList,
-    Box
+    Box,
 } from '@chakra-ui/react';
 import { NavbarItem } from '#/components/molecules/NavbarItem';
 import { IconButton } from '@chakra-ui/button';
@@ -13,7 +13,7 @@ import {
     AddIcon,
     ExternalLinkIcon,
     RepeatIcon,
-    EditIcon
+    EditIcon,
 } from '@chakra-ui/icons';
 
 const Navbar = () => {
@@ -33,24 +33,36 @@ const Navbar = () => {
                 <Menu>
                     <MenuButton
                         as={IconButton}
-                        aria-label='Options'
+                        aria-label="Options"
                         icon={<HamburgerIcon />}
-                        variant='outline'
+                        variant="outline"
                         bgColor="darkolivegreen"
                         textColor="black"
-                        colorScheme='white'
+                        colorScheme="white"
                     />
                     <MenuList bgColor="black">
-                        <MenuItem icon={<AddIcon />} bgColor="darkolivegreen">
+                        <MenuItem
+                            icon={<AddIcon />}
+                            bgColor="darkolivegreen"
+                        >
                             New Tab
                         </MenuItem>
-                        <MenuItem icon={<ExternalLinkIcon />} bgColor="darkolivegreen">
+                        <MenuItem
+                            icon={<ExternalLinkIcon />}
+                            bgColor="darkolivegreen"
+                        >
                             New Window
                         </MenuItem>
-                        <MenuItem icon={<RepeatIcon />} bgColor="darkolivegreen">
+                        <MenuItem
+                            icon={<RepeatIcon />}
+                            bgColor="darkolivegreen"
+                        >
                             Open Closed Tab
                         </MenuItem>
-                        <MenuItem icon={<EditIcon />} bgColor="darkolivegreen">
+                        <MenuItem
+                            icon={<EditIcon />}
+                            bgColor="darkolivegreen"
+                        >
                             Open File...
                         </MenuItem>
                     </MenuList>
