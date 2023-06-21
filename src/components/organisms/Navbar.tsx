@@ -39,31 +39,35 @@ const Navbar = () => {
                         bgColor="darkolivegreen"
                         textColor="black"
                         colorScheme="white"
+                        boxSize={50}
                     />
                     <MenuList bgColor="black">
                         <MenuItem
                             icon={<AddIcon />}
                             bgColor="darkolivegreen"
                         >
-                            New Tab
+                            <NavbarItem
+                                label="top"
+                                href={path}
+                            />
                         </MenuItem>
                         <MenuItem
                             icon={<ExternalLinkIcon />}
                             bgColor="darkolivegreen"
                         >
-                            New Window
+                            <NavbarItem
+                                label="skill"
+                                href={path + '#skill'}
+                            />
                         </MenuItem>
                         <MenuItem
                             icon={<RepeatIcon />}
                             bgColor="darkolivegreen"
                         >
-                            Open Closed Tab
-                        </MenuItem>
-                        <MenuItem
-                            icon={<EditIcon />}
-                            bgColor="darkolivegreen"
-                        >
-                            Open File...
+                            <NavbarItem
+                                label="works"
+                                href={path + '#works'}
+                            />
                         </MenuItem>
                     </MenuList>
                 </Menu>
