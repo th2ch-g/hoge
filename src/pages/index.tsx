@@ -17,6 +17,7 @@ import { GrHome } from 'react-icons/gr';
 import { AiFillCode } from 'react-icons/ai';
 import { SiMicrogenetics } from 'react-icons/si';
 import { GiBottomRight3DArrow } from 'react-icons/gi';
+import { AiFillLinkedin } from 'react-icons/ai';
 import { VscTools } from 'react-icons/vsc';
 import { GiSkills } from 'react-icons/gi';
 import NextLink from 'next/link';
@@ -64,7 +65,7 @@ export default function Home() {
 
                 <Box textAlign="center">
                     {' '}
-                    Bioinformatics, MD simulation, Genome analysis, Wasabi{' '}
+                    Bioinformatics, MD simulation, Genome analysis, Wasabi, GPCR{' '}
                 </Box>
 
                 <Center marginY={5}>
@@ -93,6 +94,15 @@ export default function Home() {
                         >
                             <Icon
                                 as={GoLogoGist}
+                                boxSize={50}
+                            />
+                        </NextLink>
+                        <NextLink
+                            href=""
+                            target="_blank"
+                        >
+                            <Icon 
+                                as={AiFillLinkedin}
                                 boxSize={50}
                             />
                         </NextLink>
@@ -127,7 +137,7 @@ export default function Home() {
                     fontSize={50}
                     id="skill"
                     marginY={5}
-                    scrollMargin={50}
+                    scrollMargin={70}
                 >
                     <Icon
                         as={GiSkills}
@@ -141,16 +151,22 @@ export default function Home() {
                         spacing={3}
                         fontSize={15}
                     >
-                        <ListItem>
+                        <ListItem
+                            display="flex"
+                            alignItems="center"
+                        >
                             <ListIcon
                                 as={AiFillCode}
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
                             Rust, Python, C++, Typescript, LaTeX, Vim, Git,
-                            Docker, UNIX, Supercomputer
+                            UNIX, HPC, Docker,
                         </ListItem>
-                        <ListItem>
+                        <ListItem
+                            display="flex"
+                            alignItems="center"
+                        >
                             <ListIcon
                                 as={SiMicrogenetics}
                                 color="darkolivegreen"
@@ -159,7 +175,10 @@ export default function Home() {
                             Genome analysis, Genome assemble, Gene annotation,
                             Expression analysis
                         </ListItem>
-                        <ListItem>
+                        <ListItem
+                            display="flex"
+                            alignItems="center"
+                        >
                             <ListIcon
                                 as={GiBottomRight3DArrow}
                                 color="darkolivegreen"
@@ -179,7 +198,7 @@ export default function Home() {
                     fontSize={50}
                     id="works"
                     marginY={30}
-                    scrollMargin={50}
+                    scrollMargin={70}
                 >
                     <Icon
                         as={VscTools}
@@ -255,8 +274,22 @@ export default function Home() {
                     >
                         @calliope
                     </ChakraLink>{' '}
-                    and I created it together. By the way, this site failed in
-                    the google adsense screening.
+                    and I created it together. By the way, this web site failed
+                    the goodle ad review once, but for some reason the second
+                    time it was approved.
+                </WorksCard>
+
+                <WorksCard
+                    url="https://github.com/th2ch-g/study-notes"
+                    header="study-notes"
+                    alt_string={alt_string}
+                    image_path={path + 'works/study-notes.png'}
+                >
+                    This repository has what I learned and studied, mainly for
+                    memorandum purposes. There are some interesting paper,
+                    review and web site. The fields range from genome
+                    informatics, molecular simulation, computer science, and
+                    finance.
                 </WorksCard>
 
                 <Box
