@@ -17,6 +17,7 @@ import { GrHome } from 'react-icons/gr';
 import { AiFillCode } from 'react-icons/ai';
 import { SiMicrogenetics } from 'react-icons/si';
 import { GiBottomRight3DArrow } from 'react-icons/gi';
+import { AiFillLinkedin } from 'react-icons/ai';
 import { VscTools } from 'react-icons/vsc';
 import { GiSkills } from 'react-icons/gi';
 import NextLink from 'next/link';
@@ -93,6 +94,15 @@ export default function Home() {
                         >
                             <Icon
                                 as={GoLogoGist}
+                                boxSize={50}
+                            />
+                        </NextLink>
+                        <NextLink
+                            href=""
+                            target="_blank"
+                        >
+                            <Icon 
+                                as={AiFillLinkedin}
                                 boxSize={50}
                             />
                         </NextLink>
