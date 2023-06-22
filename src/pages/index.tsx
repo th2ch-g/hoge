@@ -127,7 +127,7 @@ export default function Home() {
                     fontSize={50}
                     id="skill"
                     marginY={5}
-                    scrollMargin={50}
+                    scrollMargin={70}
                 >
                     <Icon
                         as={GiSkills}
@@ -188,7 +188,7 @@ export default function Home() {
                     fontSize={50}
                     id="works"
                     marginY={30}
-                    scrollMargin={50}
+                    scrollMargin={70}
                 >
                     <Icon
                         as={VscTools}
@@ -276,8 +276,8 @@ export default function Home() {
                     image_path={path + 'works/study-notes.png'}
                 >
                     This repository has what I learned and studied, mainly for
-                    memorandum purposes. There are some interesting
-                    paper, review and web site. The fields range from genome
+                    memorandum purposes. There are some interesting paper,
+                    review and web site. The fields range from genome
                     informatics, molecular simulation, computer science, and
                     finance.
                 </WorksCard>
