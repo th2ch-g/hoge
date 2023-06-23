@@ -1,4 +1,11 @@
-import { Menu, MenuButton, MenuItem, MenuList, Box, SimpleGrid } from '@chakra-ui/react';
+import {
+    Menu,
+    MenuButton,
+    MenuItem,
+    MenuList,
+    Box,
+    SimpleGrid,
+} from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { IconButton } from '@chakra-ui/button';
 import { HamburgerIcon } from '@chakra-ui/icons';
