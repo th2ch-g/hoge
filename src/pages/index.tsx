@@ -58,7 +58,7 @@ export default function Home() {
                 <Box
                     textAlign="center"
                     fontSize={50}
-                    id="top"
+                    id="home"
                 >
                     th2ch-g
                 </Box>
