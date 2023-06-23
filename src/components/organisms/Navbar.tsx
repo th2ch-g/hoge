@@ -1,17 +1,6 @@
 import {
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuList,
-    Box,
     SimpleGrid,
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
-import { IconButton } from '@chakra-ui/button';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { VscTools } from 'react-icons/vsc';
-import { GiSkills } from 'react-icons/gi';
-import { GrHome } from 'react-icons/gr';
 import { NavbarItem } from '../molecules/NavbarItem';
 
 const Navbar = () => {
