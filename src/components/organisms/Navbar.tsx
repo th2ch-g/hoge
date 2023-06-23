@@ -1,6 +1,4 @@
-import {
-    SimpleGrid,
-} from '@chakra-ui/react';
+import { SimpleGrid } from '@chakra-ui/react';
 import { NavbarItem } from '../molecules/NavbarItem';
 
 const Navbar = () => {
