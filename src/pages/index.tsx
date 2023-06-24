@@ -279,19 +279,6 @@ export default function Home() {
                     time it was approved.
                 </WorksCard>
 
-                <WorksCard
-                    url="https://github.com/th2ch-g/study-notes"
-                    header="study-notes"
-                    alt_string={alt_string}
-                    image_path={path + 'works/study-notes.png'}
-                >
-                    This repository has what I learned and studied, mainly for
-                    memorandum purposes. There are some interesting paper,
-                    review and web site. The fields range from genome
-                    informatics, molecular simulation, computer science, and
-                    finance.
-                </WorksCard>
-
                 <Box
                     textAlign="center"
                     marginY={10}
