@@ -98,7 +98,7 @@ export default function Home() {
                             />
                         </NextLink>
                         <NextLink
-                            href=""
+                            href="https://www.linkedin.com/in/wsbff662107283/"
                             target="_blank"
                         >
                             <Icon
