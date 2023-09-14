@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { AiFillGithub } from 'react-icons/ai';
 import { GoLogoGist } from 'react-icons/go';
+import { FaKaggle } from 'react-icons/fa';
 import { GrHome } from 'react-icons/gr';
 import { AiFillCode } from 'react-icons/ai';
 import { SiMicrogenetics } from 'react-icons/si';
@@ -21,7 +22,6 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { VscTools } from 'react-icons/vsc';
 import { GiSkills } from 'react-icons/gi';
 import NextLink from 'next/link';
-import { WorksCard } from '#/components/molecules/WorksCard';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
@@ -106,6 +106,15 @@ export default function Home() {
                                 boxSize={50}
                             />
                         </NextLink>
+                        <NextLink
+                            href="https://www.kaggle.com/lst1923"
+                            target="_blank"
+                        >
+                            <Icon
+                                as={FaKaggle}
+                                boxSize={45}
+                            />
+                        </NextLink>
                     </Stack>
                 </Center>
 
@@ -160,8 +169,8 @@ export default function Home() {
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
-                            Rust, Python, C++, Typescript, LaTeX, Vim, Git,
-                            UNIX, HPC, Docker,
+                            Rust, Python, (C++, Typescript,) LaTeX, Vim, Git,
+                            UNIX, HPC, Docker
                         </ListItem>
                         <ListItem
                             display="flex"
@@ -185,7 +194,7 @@ export default function Home() {
                                 boxSize={25}
                             />
                             MD simulation, GROMACS, AMBER, VMD, ChimeraX,
-                            MDtraj, QMMM
+                            MDtraj, PyEMMA, QMMM
                         </ListItem>
                     </List>
                 </Center>
@@ -207,7 +216,7 @@ export default function Home() {
                     Works{' '}
                 </Box>
 
-                <Box
+                {/* <Box
                     textAlign="center"
                     fontSize={15}
                     marginY={5}
@@ -216,68 +225,7 @@ export default function Home() {
                     papers, presentations, etc.
                 </Box>
 
-                <WorksCard
-                    url="https://th2ch-g.github.io/home/"
-                    header="Home page"
-                    alt_string={alt_string}
-                    image_path={path + 'works/home.png'}
-                >
-                    I created this web site in Typescirpt for my portfolio,
-                    using mainly React and Chakra. Thanks{' '}
-                    <ChakraLink
-                        color="blue.500"
-                        as={NextLink}
-                        href="https://github.com/calliope-pro"
-                        target="_blank"
-                    >
-                        @calliope
-                    </ChakraLink>{' '}
-                    for the advice.
-                </WorksCard>
-
-                <WorksCard
-                    url="https://github.com/th2ch-g/rust-top_message/"
-                    header="rust-top_message"
-                    alt_string={alt_string}
-                    image_path="https://github.com/th2ch-g/rust-top_message/blob/main/img/logo.png?raw=true"
-                >
-                    This is super useless CLI tool created originally to prank
-                    seniors on the lab server. It eats your computing resources
-                    using parallel computing. This logo was created by a
-                    graduating senior 10min. You can also use this tool on
-                    multiple nodes because MPI is also available.
-                </WorksCard>
-
-                <WorksCard
-                    url="https://github.com/th2ch-g/dotfiles"
-                    header="dotfiles"
-                    alt_string={alt_string}
-                    image_path={path + 'works/dotfiles.png'}
-                >
-                    This is a repository of my settings. This has been very
-                    helpful because I use several supercomputers in my research.
-                    It is also used by juniors in the lab and is well received.
-                </WorksCard>
-
-                <WorksCard
-                    url="https://scholar-1-e4000274.deta.app/"
-                    header="Scholarship search site for TokyoTech"
-                    alt_string={alt_string}
-                    image_path={path + 'works/Scholarship.png'}
-                >
-                    Tokyo Tech scholarship website was so difficult to use that{' '}
-                    <ChakraLink
-                        color="blue.500"
-                        as={NextLink}
-                        href="https://github.com/calliope-pro"
-                        target="_blank"
-                    >
-                        @calliope
-                    </ChakraLink>{' '}
-                    and I created it together. By the way, this web site failed
-                    the goodle ad review once, but for some reason the second
-                    time it was approved.
-                </WorksCard>
+                 */}
 
                 <Box
                     textAlign="center"
