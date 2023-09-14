@@ -22,6 +22,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 import { VscTools } from 'react-icons/vsc';
 import { GiSkills } from 'react-icons/gi';
 import NextLink from 'next/link';
+import { UnorderedList } from '@chakra-ui/react';
 
 const notoSanJP = Noto_Sans_JP({ subsets: ['latin'] });
 
@@ -216,16 +217,83 @@ export default function Home() {
                     Works{' '}
                 </Box>
 
-                {/* <Box
-                    textAlign="center"
-                    fontSize={15}
-                    marginY={5}
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    fontSize={30}
                 >
-                    See CV for detailed information about my research such as
-                    papers, presentations, etc.
+                    Research{' '}
                 </Box>
+                <Center>
+                    <UnorderedList
+                        spacing={2}
+                        fontSize={15}
+                    >
+                        <ListItem>
+                            Genome assembly and analysis of wasabi{' '}
+                            <ChakraLink
+                                color="blue.500"
+                                as={NextLink}
+                                href="https://doi.org/10.1038/s41597-023-02356-z"
+                                target="_blank"
+                            >
+                                [link]
+                            </ChakraLink>{' '}
+                        </ListItem>
+                    </UnorderedList>
+                </Center>
 
-                 */}
+                <Box marginY={30}> </Box>
+
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    fontSize={30}
+                >
+                    Tool{' '}
+                </Box>
+                <Center>
+                    <UnorderedList
+                        spacing={2}
+                        fontSize={15}
+                    >
+                        <ListItem>
+                            rust-top_message
+                            <ChakraLink
+                                color="blue.500"
+                                as={NextLink}
+                                href="https://github.com/th2ch-g/rust-top_message"
+                                target="_blank"
+                            >
+                                [link]
+                            </ChakraLink>{' '}
+                        </ListItem>
+                        <ListItem>
+                            tmplot.py{' '}
+                            <ChakraLink
+                                color="blue.500"
+                                as={NextLink}
+                                href="https://github.com/th2ch-g/tmplot.py"
+                                target="_blank"
+                            >
+                                [link]
+                            </ChakraLink>{' '}
+                        </ListItem>
+                        <ListItem>
+                            TokyoTech Scholar web site
+                            <ChakraLink
+                                color="blue.500"
+                                as={NextLink}
+                                href="https://scholar-1-e4000274.deta.app/"
+                                target="_blank"
+                            >
+                                [link]
+                            </ChakraLink>{' '}
+                        </ListItem>
+                    </UnorderedList>
+                </Center>
 
                 <Box
                     textAlign="center"
