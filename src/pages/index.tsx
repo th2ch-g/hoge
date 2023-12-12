@@ -66,7 +66,7 @@ export default function Home() {
 
                 <Box textAlign="center">
                     {' '}
-                    Bioinformatics, MD simulation, Genome analysis, Wasabi, GPCR{' '}
+                    Bioinformatics, Wasabi, GPCR{' '}
                 </Box>
 
                 <Center marginY={5}>
@@ -170,8 +170,7 @@ export default function Home() {
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
-                            Rust, Python, (C++, Typescript,) LaTeX, Vim, Git,
-                            UNIX, HPC, Docker
+                            Rust, Python, UNIX, HPC, Container, Git
                         </ListItem>
                         <ListItem
                             display="flex"
@@ -182,7 +181,7 @@ export default function Home() {
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
-                            Genome analysis, Genome assemble, Gene annotation,
+                            Genome analysis, Assemble, Annotation,
                             Expression analysis
                         </ListItem>
                         <ListItem
@@ -194,8 +193,7 @@ export default function Home() {
                                 color="darkolivegreen"
                                 boxSize={25}
                             />
-                            MD simulation, GROMACS, AMBER, VMD, ChimeraX,
-                            MDtraj, PyEMMA, QMMM
+                            MD simulation, MM/QMMM, Enhance sampling, MSM
                         </ListItem>
                     </List>
                 </Center>
@@ -299,7 +297,7 @@ export default function Home() {
                     textAlign="center"
                     marginY={10}
                 >
-                    For other works, please visit{' '}
+                    Please see{' '}
                     <ChakraLink
                         color="blue.500"
                         as={NextLink}
@@ -308,7 +306,7 @@ export default function Home() {
                     >
                         github
                     </ChakraLink>{' '}
-                    and other sites.
+                    and other sites for more information.
                 </Box>
             </Box>
         </>
