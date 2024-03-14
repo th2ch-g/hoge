@@ -1,9 +1,8 @@
 # My home page
-
--   Typescript
-    -   React
-    -   Chakra
+- Rust
+  - yew
+- tailwindcss
 
 **Special Thanks**
 
--   [@calliope](https://github.com/calliope-pro)
+- [@calliope](https://github.com/calliope-pro)
