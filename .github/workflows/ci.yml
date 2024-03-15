@@ -32,7 +32,8 @@ jobs:
       - name: build src
         run: |
           rustup target add wasm32-unknown-unknown
-          trunk build --public-url .
+          trunk build
+          # trunk build --public-url .
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
