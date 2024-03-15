@@ -36,11 +36,11 @@ fn main() {
 
 #[derive(Routable, PartialEq, Eq, Clone, Debug)]
 enum Routes {
-    #[at("/")]
+    #[at("/home")]
     Home,
-    #[at("/works")]
+    #[at("/home/works")]
     Works,
-    #[at("/blog")]
+    #[at("/home/blog")]
     Blog,
     #[at("/404")]
     #[not_found]
