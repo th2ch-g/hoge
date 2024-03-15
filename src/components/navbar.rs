@@ -1,4 +1,6 @@
 use yew::prelude::*;
+use yew_router::components::Link;
+use crate::Routes;
 
 #[derive(PartialEq, Properties)]
 pub struct Props;
@@ -33,9 +35,18 @@ impl Component for Navbar {
             <nav class="bg-white shadow dark:bg-gray-800">
                 <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
                     // <a href="/" class="text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6">{"home"}</a>
-                    <a href="/home" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">{"home"}</a>
-                    <a href="/home/works" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">{"works"}</a>
-                    <a href="/home/blog" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">{"blog"}</a>
+                    // <a href="/home" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">{"home"}</a>
+                    // <a href="/home/works" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">{"works"}</a>
+                    // <a href="/home/blog" class="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">{"blog"}</a>
+                    <Link<Routes> classes="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" to={Routes::Home}>
+                        {"Home"}
+                    </Link<Routes>>
+                    <Link<Routes> classes="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" to={Routes::Works}>
+                        {"Works"}
+                    </Link<Routes>>
+                    <Link<Routes> classes="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" to={Routes::Blog}>
+                        {"Blog"}
+                    </Link<Routes>>
                 </div>
             </nav>
         }

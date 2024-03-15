@@ -29,7 +29,9 @@ impl Component for IndexPage {
                   <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
                   {"th2ch-g"}
                   </h2>
-                  <p class="text-center mt-4 font-medium text-slate-500">{"homepage built by yew"}</p>
+                  <p class="text-center mt-4 font-medium text-slate-500">
+                  {"homepage built with yew+tailwindcss"}
+                  </p>
 
                   <div class="flex gap-6 mt-20 justify-center">
                     <IconHome />
