@@ -3,6 +3,3 @@
   - yew
 - tailwindcss
 
-**Special Thanks**
-
-- [@calliope](https://github.com/calliope-pro)
