@@ -25,10 +25,14 @@ jobs:
           npm run build:tailwindcss
 
       - name: setup trunk
+        uses: jetli/trunk-action@0.4.0
+        with:
+            version: latest
+
+      - name: build src
         run: |
           rustup target add wasm32-unknown-unknown
-          cargo install trunk
-          trunk build --release
+          trunk build --release --public-url ${{ github.event.repository.name }}
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
