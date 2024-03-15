@@ -32,10 +32,10 @@ jobs:
       - name: build src
         run: |
           rustup target add wasm32-unknown-unknown
-          trunk build
-          cat ./dist/index.html | sed -e 's/"\//".\//g' -e "s/'\//'.\//g" >> ./dist/fixed.html
-          mv ./dist/fixed.html ./dist/index.html
-          # trunk build --public-url .
+          # trunk build
+          # cat ./dist/index.html | sed -e 's/"\//".\//g' -e "s/'\//'.\//g" >> ./dist/fixed.html
+          # mv ./dist/fixed.html ./dist/index.html
+          trunk build --public-url .
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
