@@ -19,6 +19,8 @@ impl Component for Works {
         html! {
             <div>
                 <Navbar />
+
+
                 <Footer />
             </div>
         }

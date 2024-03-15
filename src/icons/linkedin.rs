@@ -18,8 +18,8 @@ impl Component for IconLinkedin {
           <a href="https://www.linkedin.com/in/wsbff662107283/" class="inline-block col-span-1 text-gray-300 transition-all hover:text-gray-400" target="_blank" rel="noopener noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="1em"
-              height="1em"
+              width="50"
+              height="50"
               fill="none"
               viewBox="0 0 16 16"
             >
