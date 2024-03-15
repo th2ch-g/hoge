@@ -53,7 +53,7 @@ impl Component for IndexPage {
                   </div>
 
                   <div class="flex gap-6 mt-20 justify-center">
-                    <img src="img/daiowasabi1.jpg" width=400 height=200 />
+                    <img src="https://raw.githubusercontent.com/th2ch-g/home/main/img/daiowasabi1.jpg" width=400 height=200 />
                   </div>
                 </Layout>
               // <Footer />
