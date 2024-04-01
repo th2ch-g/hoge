@@ -51,7 +51,7 @@ fn switch(routes: Routes) -> Html {
     match routes {
         Routes::Home => html! { <pages::index::IndexPage /> },
         Routes::Works => html! { <pages::works::Works /> },
-        Routes::Blog => html! { <pages::notfound::NotFound /> },
+        Routes::Blog => html! { <pages::blog::Blog /> },
         Routes::NotFound => html! { <pages::notfound::NotFound /> },
     }
 }

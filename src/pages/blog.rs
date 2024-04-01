@@ -1,5 +1,6 @@
 use crate::components::footer::Footer;
 use crate::components::navbar::Navbar;
+use crate::components::markdown::Markdown;
 use yew::prelude::*;
 
 #[derive(PartialEq, Properties)]
@@ -15,10 +16,11 @@ impl Component for Blog {
         Self
     }
 
-    fn view(&self, _ctx: &Context<Self>) -> Html {
+    fn view(&self, ctx: &Context<Self>) -> Html {
         html! {
             <div>
                 <Navbar />
+                    <Markdown markdown_data={include_str!("../../../test.md")}/>
                 <Footer />
             </div>
         }
