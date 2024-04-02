@@ -5,6 +5,8 @@ use crate::icons::github::IconGithub;
 use crate::icons::home::IconHome;
 use crate::icons::kaggle::IconKaggle;
 use crate::icons::linkedin::IconLinkedin;
+use crate::components::title::Title;
+use crate::components::footer::Footer;
 use yew::prelude::*;
 
 #[derive(PartialEq, Properties)]
@@ -26,12 +28,7 @@ impl Component for IndexPage {
               <Navbar />
                 // https://tailwindcomponents.com/component/list-blog-post-tailwindcss
                 <Layout>
-                  <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
-                  {"th2ch-g"}
-                  </h2>
-                  <p class="text-center mt-4 font-medium text-slate-500">
-                  {"homepage built with yew+tailwindcss"}
-                  </p>
+                  <Title title={"th2ch-g"} subtitle={"homepage built with yew+tailwindcss"} />
 
                   <div class="flex gap-6 mt-20 justify-center">
                     <IconHome />
@@ -56,7 +53,7 @@ impl Component for IndexPage {
                     <img src="https://raw.githubusercontent.com/th2ch-g/home/main/img/daiowasabi1.jpg" width=400 height=200 />
                   </div>
                 </Layout>
-              // <Footer />
+              <Footer />
 
             </div>
         }
