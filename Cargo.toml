@@ -15,7 +15,6 @@ serde = { version = "1.0.132", features = ["derive"]  }
 gloo = "0.5.0"
 wasm-bindgen-futures = "0.4.28"
 wasm-bindgen = { version = "0.2.78", features = ["serde-serialize"] }
-futures = "0.3"
 
 [dependencies.web-sys]
 version = "0.3.55"

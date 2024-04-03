@@ -1,12 +1,12 @@
+use crate::components::footer::Footer;
 use crate::components::layout::Layout;
 use crate::components::navbar::Navbar;
+use crate::components::title::Title;
 use crate::icons::gist::IconGist;
 use crate::icons::github::IconGithub;
 use crate::icons::home::IconHome;
 use crate::icons::kaggle::IconKaggle;
 use crate::icons::linkedin::IconLinkedin;
-use crate::components::title::Title;
-use crate::components::footer::Footer;
 use yew::prelude::*;
 
 #[derive(PartialEq, Properties)]
