@@ -22,7 +22,7 @@ jobs:
           node-version: latest
           submodules: true
 
-      - run: ls && pwd
+      - run: ls && pwd && ls github-markdown-css && ls /home/runner/work/home/home/./github-markdown-css/
 
       - run: |
           npm i
