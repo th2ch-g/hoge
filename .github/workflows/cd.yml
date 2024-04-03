@@ -20,7 +20,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
-          submodules: recursive
+          submodules: true
+
+      - run: |
+        ls
+        pwd
+
+
       - run: |
           npm i
           npm run build:tailwindcss
