@@ -22,10 +22,7 @@ jobs:
           node-version: latest
           submodules: true
 
-      - run: |
-        ls
-        pwd
-
+      - run: ls && pwd
 
       - run: |
           npm i
