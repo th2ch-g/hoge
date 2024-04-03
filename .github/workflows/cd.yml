@@ -15,12 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          submodules: true
 
       - name: setup node
         uses: actions/setup-node@v3
         with:
           node-version: latest
-          submodules: true
 
       - run: ls && pwd && ls github-markdown-css && ls /home/runner/work/home/home/./github-markdown-css/
 
