@@ -1,6 +1,7 @@
 use crate::components::card::Card;
 use crate::components::footer::Footer;
 use crate::components::navbar::Navbar;
+use crate::components::title::Title;
 use yew::prelude::*;
 
 #[derive(PartialEq, Properties)]
@@ -22,9 +23,8 @@ impl Component for Works {
                 <Navbar />
 
                 <div class="relative flex flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
-                  <h2 class="font-bold text-center text-6xl text-slate-700 font-display mb-6">
-                  {"Works"}
-                  </h2>
+                  <Title title={"Works"} subtitle={""} />
+
                   <div class="mx-auto max-w-screen-xl px-4 w-full">
                     <h2 class="mb-4 font-bold text-xl text-gray-600">
                     {""}
@@ -45,6 +45,14 @@ impl Component for Works {
                         content={"Scholarship search website for TokyoTech"}
                         tag={"React, FastAPI, deta"}
                         image={"https://raw.githubusercontent.com/calliope-pro/scholar/main/TokyoTech_Scholar.png"}
+                     />
+
+                     <Card
+                        url={"https://github.com/Kitaolab/PaCS-Toolkit"}
+                        title={"PaCS-Toolkit"}
+                        content={"Enhance sampling method of Molecular Dynamics Simulation for Protein"}
+                        tag={"MD simulation, Python, HPC"}
+                        image={"https://avatars.githubusercontent.com/u/58493563"}
                      />
 
                     </div>

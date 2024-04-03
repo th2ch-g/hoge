@@ -1,6 +1,6 @@
+use crate::Routes;
 use yew::prelude::*;
 use yew_router::components::Link;
-use crate::Routes;
 
 #[derive(PartialEq, Properties)]
 pub struct Props;
@@ -44,7 +44,7 @@ impl Component for Navbar {
                     <Link<Routes> classes="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" to={Routes::Works}>
                         {"Works"}
                     </Link<Routes>>
-                    <Link<Routes> classes="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" to={Routes::Blog}>
+                    <Link<Routes> classes="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6" to={Routes::BlogList}>
                         {"Blog"}
                     </Link<Routes>>
                 </div>

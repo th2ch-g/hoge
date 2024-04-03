@@ -4,6 +4,7 @@ use yew_router::prelude::*;
 mod components;
 mod icons;
 mod pages;
+mod util;
 
 struct App;
 
@@ -41,7 +42,9 @@ enum Routes {
     #[at("/home/works")]
     Works,
     #[at("/home/blog")]
-    Blog,
+    BlogList,
+    #[at("/home/blog/:id")]
+    Blog { id: String },
     #[at("/404")]
     #[not_found]
     NotFound,
@@ -51,7 +54,8 @@ fn switch(routes: Routes) -> Html {
     match routes {
         Routes::Home => html! { <pages::index::IndexPage /> },
         Routes::Works => html! { <pages::works::Works /> },
-        Routes::Blog => html! { <pages::notfound::NotFound /> },
+        Routes::BlogList => html! { <pages::blog_list::BlogList /> },
+        Routes::Blog { id } => html! { <pages::blog::Blog id={id.clone()} /> },
         Routes::NotFound => html! { <pages::notfound::NotFound /> },
     }
 }
