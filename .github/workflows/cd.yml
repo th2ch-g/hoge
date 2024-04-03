@@ -23,8 +23,6 @@ jobs:
         with:
           node-version: latest
 
-      - run: ls && pwd && ls github-markdown-css && ls /home/runner/work/home/home/./github-markdown-css/
-
       - run: |
           npm i
           npm run build:tailwindcss
