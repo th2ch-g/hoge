@@ -32,6 +32,14 @@ impl Component for Works {
                     <div class="grid w-full sm:grid-cols-2 xl:grid-cols-4 gap-6">
 
                       <Card
+                        url={"https://th2ch-g.github.io/mogura/"}
+                        title={"mogura"}
+                        content={"A molecular visualizer in Rust"}
+                        tag={"Rust, WebGPU, Graphics, Wasm"}
+                        image={"https://raw.githubusercontent.com/th2ch-g/home/main/img/mogura-wasm.png"}
+                      />
+
+                      <Card
                         url={"https://github.com/th2ch-g/rust-top_message"}
                         title={"rust-top_message"}
                         content={"display your message on top command"}
