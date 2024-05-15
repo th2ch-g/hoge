@@ -47,6 +47,14 @@ impl Component for Works {
                         image={"https://raw.githubusercontent.com/th2ch-g/rust-top_message/main/img/logo.png"}
                       />
 
+                      <Card
+                        url={"https://github.com/th2ch-g/dotfiles"}
+                        title={"dotfiles"}
+                        content={"My dotfiles for UNIX"}
+                        tag={"UNIX, zsh, vim, tmux"}
+                        image={"https://raw.githubusercontent.com/th2ch-g/dotfiles/main/others/example.png"}
+                      />
+
                      <Card
                         url={"https://scholar-1-e4000274.deta.app/"}
                         title={"東京工業大学奨学金検索サイト"}
