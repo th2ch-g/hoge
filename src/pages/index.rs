@@ -52,6 +52,19 @@ impl Component for IndexPage {
                   <div class="flex gap-6 mt-20 justify-center">
                     <img src="https://raw.githubusercontent.com/th2ch-g/home/main/img/daiowasabi1.jpg" width=400 height=200 />
                   </div>
+
+
+                  // comment
+                  <Title title={""} subtitle={"Comments to this content via your github account"} />
+                  <script
+                     src="https://utteranc.es/client.js"
+                     repo="th2ch-g/home"
+                     issue-term="pathname"
+                     theme="github-light"
+                     crossorigin="anonymous"
+                     async=true
+                   ></script>
+
                 </Layout>
               <Footer />
 
