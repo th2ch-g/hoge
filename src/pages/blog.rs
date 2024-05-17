@@ -68,6 +68,18 @@ impl Component for Blog {
                     <div class="flex gap-6 mt-20 justify-center lg:col-span-2 col-span-3 border border-gray-100 rounded-lg p-4 bg-white grid lg:gap-6 gap-4">
                       {content}
                     </div>
+
+                     // comment
+                     <Title title={""} subtitle={"Comments to this content via your github account"} />
+                     <script
+                        src="https://utteranc.es/client.js"
+                        repo="th2ch-g/home"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async=true
+                      ></script>
+
                   </Layout>
                 <Footer />
             </div>
