@@ -71,6 +71,14 @@ impl Component for Works {
                         image={"https://avatars.githubusercontent.com/u/58493563"}
                      />
 
+                     <Card
+                        url={"https://th2ch-g.github.io/brainfuck-rs/"}
+                        title={"Brainfuck interpreter"}
+                        content={"Brainfuck is a simple programming language, but Turing complete"}
+                        tag={"Programming Language Compiler, Rust, Wasm"}
+                        image={"https://raw.githubusercontent.com/th2ch-g/brainfuck-rs/main/example.png"}
+                     />
+
                     </div>
                   </div>
                 </div>
