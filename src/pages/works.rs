@@ -35,7 +35,7 @@ impl Component for Works {
                         url={"https://th2ch-g.github.io/mogura/"}
                         title={"mogura"}
                         content={"A molecular visualizer in Rust"}
-                        tag={"Rust, WebGPU, Graphics, Wasm"}
+                        tag={"#rust #webgpu #graphics #wasm"}
                         image={"https://raw.githubusercontent.com/th2ch-g/home/main/img/mogura-wasm.png"}
                       />
 
@@ -43,7 +43,7 @@ impl Component for Works {
                         url={"https://github.com/th2ch-g/rust-top_message"}
                         title={"rust-top_message"}
                         content={"display your message on top command"}
-                        tag={"Rust, OMP/MPI/GPU"}
+                        tag={"#rust #omp #mpi #gpu"}
                         image={"https://raw.githubusercontent.com/th2ch-g/rust-top_message/main/img/logo.png"}
                       />
 
@@ -51,7 +51,7 @@ impl Component for Works {
                         url={"https://github.com/th2ch-g/dotfiles"}
                         title={"dotfiles"}
                         content={"My dotfiles for UNIX"}
-                        tag={"UNIX, zsh, vim, tmux"}
+                        tag={"#unix #zsh #vim #tmux"}
                         image={"https://raw.githubusercontent.com/th2ch-g/dotfiles/main/others/example.png"}
                       />
 
@@ -59,7 +59,7 @@ impl Component for Works {
                         url={"https://scholar-1-e4000274.deta.app/"}
                         title={"東京工業大学奨学金検索サイト"}
                         content={"Scholarship search website for TokyoTech"}
-                        tag={"React, FastAPI, deta"}
+                        tag={"#react #fastapi #deta"}
                         image={"https://raw.githubusercontent.com/calliope-pro/scholar/main/TokyoTech_Scholar.png"}
                      />
 
@@ -67,7 +67,7 @@ impl Component for Works {
                         url={"https://github.com/Kitaolab/PaCS-Toolkit"}
                         title={"PaCS-Toolkit"}
                         content={"Enhance sampling method of Molecular Dynamics Simulation for Protein"}
-                        tag={"MD simulation, Python, HPC"}
+                        tag={"#molecular-simulation #python #hpc"}
                         image={"https://avatars.githubusercontent.com/u/58493563"}
                      />
 
@@ -75,8 +75,16 @@ impl Component for Works {
                         url={"https://th2ch-g.github.io/brainfuck-rs/"}
                         title={"Brainfuck interpreter"}
                         content={"Brainfuck is a simple programming language, but Turing complete"}
-                        tag={"Programming Language Compiler, Rust, Wasm"}
+                        tag={"#bf #compiler #rust #wasm"}
                         image={"https://raw.githubusercontent.com/th2ch-g/brainfuck-rs/main/example.png"}
+                     />
+
+                     <Card
+                        url={"https://github.com/th2ch-g/tmplot.py/"}
+                        title={"tmplot"}
+                        content={"One liner Plotter that supports file and pipe input for quick description"}
+                        tag={"#matplotlib #python #cli"}
+                        image={"https://raw.githubusercontent.com/th2ch-g/home/main/img/tmplot.png"}
                      />
 
                     </div>
