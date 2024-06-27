@@ -27,7 +27,7 @@ impl Component for IndexPage {
               <Navbar />
                 // https://tailwindcomponents.com/component/list-blog-post-tailwindcss
                 <Layout>
-                  <Title title={"th2ch-g"} subtitle={"homepage built with yew+tailwindcss"} />
+                  <Title title={"Home"} subtitle={"homepage built with yew+tailwindcss"} />
 
                   <div class="flex gap-6 mt-20 justify-center">
                     <IconHome />
@@ -53,22 +53,22 @@ impl Component for IndexPage {
 
 
                   // comment
-                    <div class="flex mt-20 justify-center w-full">
-                      <details class="w-full max-w-3xl">
-                        <summary class="text-center cursor-pointer mt-10">{"Open comment"}</summary>
-                        <div class="p-4 bg-white border rounded-md">
-                          <Title title={""} subtitle={"Comments to this content via your github account"} />
-                          <script
-                            src="https://utteranc.es/client.js"
-                            repo="th2ch-g/home"
-                            issue-term="pathname"
-                            theme="github-light"
-                            crossorigin="anonymous"
-                            async=true
-                          ></script>
-                        </div>
-                      </details>
-                    </div>
+                    // <div class="flex mt-20 justify-center w-full">
+                    //   <details class="w-full max-w-3xl">
+                    //     <summary class="text-center cursor-pointer mt-10">{"Open comment"}</summary>
+                    //     <div class="p-4 bg-white border rounded-md">
+                    //       <Title title={""} subtitle={"Comments to this content via your github account"} />
+                    //       <script
+                    //         src="https://utteranc.es/client.js"
+                    //         repo="th2ch-g/home"
+                    //         issue-term="pathname"
+                    //         theme="github-light"
+                    //         crossorigin="anonymous"
+                    //         async=true
+                    //       ></script>
+                    //     </div>
+                    //   </details>
+                    // </div>
                 </Layout>
               <Footer />
 

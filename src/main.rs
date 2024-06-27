@@ -40,10 +40,10 @@ enum Routes {
     Home,
     #[at("/home/works")]
     Works,
-    #[at("/home/blog")]
-    BlogList,
-    #[at("/home/blog/:id")]
-    Blog { id: String },
+    // #[at("/home/blog")]
+    // BlogList,
+    // #[at("/home/blog/:id")]
+    // Blog { id: String },
     #[at("/404")]
     #[not_found]
     NotFound,
@@ -53,8 +53,8 @@ fn switch(routes: Routes) -> Html {
     match routes {
         Routes::Home => html! { <pages::index::IndexPage /> },
         Routes::Works => html! { <pages::works::Works /> },
-        Routes::BlogList => html! { <pages::blog_list::BlogList /> },
-        Routes::Blog { id } => html! { <pages::blog::Blog id={id.clone()} /> },
+        // Routes::BlogList => html! { <pages::blog_list::BlogList /> },
+        // Routes::Blog { id } => html! { <pages::blog::Blog id={id.clone()} /> },
         Routes::NotFound => html! { <pages::notfound::NotFound /> },
     }
 }
