@@ -19,12 +19,10 @@ impl Component for Title {
     fn view(&self, ctx: &Context<Self>) -> Html {
         html! {
             <div>
-              <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
-              {&ctx.props().title}
-              </h2>
-              <p class="text-center mt-4 font-medium text-slate-500">
-              {&ctx.props().subtitle}
-              </p>
+                <h2 class="font-bold text-center text-6xl text-slate-700 font-display">
+                    { &ctx.props().title }
+                </h2>
+                <p class="text-center mt-4 font-medium text-slate-500">{ &ctx.props().subtitle }</p>
             </div>
         }
     }

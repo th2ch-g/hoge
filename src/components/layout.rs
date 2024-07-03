@@ -19,12 +19,14 @@ impl Component for Layout {
     fn view(&self, ctx: &Context<Self>) -> Html {
         html! {
             // https://tailwindcomponents.com/component/list-blog-post-tailwindcss
-            <div class="relative flex flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12">
-              <div class="min-h-28 ">
-                <div class="max-w-screen-lg mx-auto py-4">
-                    { for ctx.props().children.iter() }
+            <div
+                class="relative flex flex-col justify-center overflow-hidden bg-slate-100 py-6 sm:py-12"
+            >
+                <div class="min-h-28 ">
+                    <div class="max-w-screen-lg mx-auto py-4">
+                        { for ctx.props().children.iter() }
+                    </div>
                 </div>
-              </div>
             </div>
         }
     }

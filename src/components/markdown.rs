@@ -32,10 +32,6 @@ impl Component for Markdown {
 
         let node = web_sys::Node::from(div);
         let vnode = yew::virtual_dom::VNode::VRef(node);
-        html! {
-            <div class="markdown-body">
-                {vnode}
-            </div>
-        }
+        html! { <div class="markdown-body">{ vnode }</div> }
     }
 }
