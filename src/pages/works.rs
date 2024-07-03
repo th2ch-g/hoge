@@ -34,7 +34,7 @@ impl Component for Works {
                       <Card
                         url={"https://th2ch-g.github.io/mogura/"}
                         title={"mogura"}
-                        content={"A molecular visualizer in Rust"}
+                        content={"A molecular graphic visualizer in Rust"}
                         tag={"#rust #webgpu #graphics #wasm"}
                         image={"https://raw.githubusercontent.com/th2ch-g/home/main/img/mogura-wasm.png"}
                       />
@@ -85,6 +85,14 @@ impl Component for Works {
                         content={"One liner Plotter that supports file and pipe input for quick description"}
                         tag={"#matplotlib #python #cli"}
                         image={"https://raw.githubusercontent.com/th2ch-g/home/main/img/tmplot.png"}
+                     />
+
+                     <Card
+                        url={"https://www.kaggle.com/lst1923"}
+                        title={"Kaggle"}
+                        content={"Competition Expert"}
+                        tag={"#python #ds #ml"}
+                        image={"https://www.kaggle.com/static/images/logos/kaggle-logo-transparent-300.png"}
                      />
 
                     </div>

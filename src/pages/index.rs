@@ -1,7 +1,7 @@
 use crate::components::footer::Footer;
 use crate::components::icons::github::IconGithub;
 use crate::components::icons::home::IconHome;
-use crate::components::icons::kaggle::IconKaggle;
+// use crate::components::icons::kaggle::IconKaggle;
 use crate::components::icons::linkedin::IconLinkedin;
 use crate::components::layout::Layout;
 use crate::components::navbar::Navbar;
@@ -32,7 +32,7 @@ impl Component for IndexPage {
                   <div class="flex gap-6 mt-20 justify-center">
                     <IconHome />
                     <IconGithub />
-                    <IconKaggle />
+                    // <IconKaggle />
                     <IconLinkedin />
                   </div>
 
