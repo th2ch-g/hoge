@@ -29,7 +29,7 @@ impl Component for Works {
                         <h2 class="mb-4 font-bold text-xl text-gray-600">{ "" }</h2>
                         <div class="grid w-full sm:grid-cols-2 xl:grid-cols-4 gap-6">
                             <Card
-                                url="https://th2ch-g.github.io/mogura/"
+                                url="https://mogura-rs.github.io/mogura/"
                                 title="mogura"
                                 content="A molecular graphic visualizer in Rust"
                                 tag="#rust #webgpu #graphics #wasm"
